@@ -1,0 +1,10518 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class: Conversation | leancloud-realtime</title>
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+</head>
+<body>
+<div class="main-container">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label for="nav-trigger" class="navicon-button x">
+      <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+    <nav class="lnb" id="lnb">
+        <div class="nav-main">
+            <h1><a href="index.html" class="link">leancloud-realtime</a></h1>
+            <span class="version">
+            
+                v5.0.0-rc.6
+            
+            </span>
+        </div>
+        <div class="nav-search js-search">
+            <input type="text" placeholder="Search docs">
+            <ul class="searched-list"></ul>
+        </div>
+
+        
+
+        <div class="scroll">
+        <div class="nav-api hidden"><h3><a href="global.html">Global</a></h3></div><div class="nav-api hidden"><h3>Modules</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="module-leancloud-realtime.html">leancloud-realtime</a>
+                </header>
+                <div class="nav-item-sub hidden" id="module_leancloud-realtime_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.BinaryMessage">BinaryMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ChatRoom">ChatRoom</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.Conversation">Conversation</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ConversationMemberRole">ConversationMemberRole</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ConversationQuery">ConversationQuery</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.debug">debug</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.Message">Message</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.MessageParser">MessageParser</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.MessageQueryDirection">MessageQueryDirection</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.MessageStatus">MessageStatus</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.Realtime">Realtime</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.RecalledMessage">RecalledMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ServiceConversation">ServiceConversation</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.TemporaryConversation">TemporaryConversation</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.TextMessage">TextMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.TypedMessage">TypedMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~ErrorCode">ErrorCode</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~Event">Event</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~MessagePriority">MessagePriority</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.messageField">messageField</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.messageType">messageType</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.setAdapters">setAdapters</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~defineConversationProperty">defineConversationProperty</a></li></ul></div></div>
+            </li></ul></div><div class="nav-api hidden"><h3>Classes</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="BinaryMessage.html">BinaryMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="BinaryMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="BinaryMessage.html#buffer">buffer</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#from">from</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#id">id</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#status">status</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="BinaryMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ChatRoom.html">ChatRoom</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ChatRoom_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="ChatRoom.html#createdAt">createdAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#creator">creator</a></li><li class="sub-nav-item "><a href="ChatRoom.html#id">id</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#members">members</a></li><li class="sub-nav-item "><a href="ChatRoom.html#muted">muted</a></li><li class="sub-nav-item "><a href="ChatRoom.html#mutedMembers">mutedMembers</a></li><li class="sub-nav-item "><a href="ChatRoom.html#name">name</a></li><li class="sub-nav-item "><a href="ChatRoom.html#system">system</a></li><li class="sub-nav-item "><a href="ChatRoom.html#transient">transient</a></li><li class="sub-nav-item "><a href="ChatRoom.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="ChatRoom.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li><li class="sub-nav-item "><a href="ChatRoom.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="ChatRoom.html#add">add <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#blockMembers">blockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="ChatRoom.html#fetch">fetch <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#get">get</a></li><li class="sub-nav-item "><a href="ChatRoom.html#join">join <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#mute">mute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#muteMembers">muteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#queryBlockedMembers">queryBlockedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#queryMutedMembers">queryMutedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#quit">quit <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#remove">remove <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#save">save <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#set">set</a></li><li class="sub-nav-item "><a href="ChatRoom.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="ChatRoom.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="ChatRoom.html#unblockMembers">unblockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#unmute">unmute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#unmuteMembers">unmuteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#update">update <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="ChatRoom.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Conversation.html">Conversation</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Conversation_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Conversation.html#createdAt">createdAt</a></li><li class="sub-nav-item "><a href="Conversation.html#creator">creator</a></li><li class="sub-nav-item "><a href="Conversation.html#id">id</a></li><li class="sub-nav-item "><a href="Conversation.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="Conversation.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="Conversation.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="Conversation.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="Conversation.html#members">members</a></li><li class="sub-nav-item "><a href="Conversation.html#muted">muted</a></li><li class="sub-nav-item "><a href="Conversation.html#mutedMembers">mutedMembers</a></li><li class="sub-nav-item "><a href="Conversation.html#name">name</a></li><li class="sub-nav-item "><a href="Conversation.html#system">system</a></li><li class="sub-nav-item "><a href="Conversation.html#transient">transient</a></li><li class="sub-nav-item "><a href="Conversation.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="Conversation.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li><li class="sub-nav-item "><a href="Conversation.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Conversation.html#add">add <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#blockMembers">blockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="Conversation.html#fetch">fetch <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#get">get</a></li><li class="sub-nav-item "><a href="Conversation.html#getAllMemberInfo">getAllMemberInfo <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#getMemberInfo">getMemberInfo <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#join">join <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#mute">mute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#muteMembers">muteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#queryBlockedMembers">queryBlockedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#queryMutedMembers">queryMutedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#quit">quit <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#remove">remove <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#save">save <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#set">set</a></li><li class="sub-nav-item "><a href="Conversation.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="Conversation.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="Conversation.html#unblockMembers">unblockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#unmute">unmute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#unmuteMembers">unmuteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#update">update <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#updateMemberRole">updateMemberRole <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="Conversation.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ConversationMemberInfo.html">ConversationMemberInfo</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ConversationMemberInfo_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="ConversationMemberInfo.html#conversationId">conversationId</a></li><li class="sub-nav-item "><a href="ConversationMemberInfo.html#isOwner">isOwner</a></li><li class="sub-nav-item "><a href="ConversationMemberInfo.html#memberId">memberId</a></li><li class="sub-nav-item "><a href="ConversationMemberInfo.html#role">role</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ConversationQuery.html">ConversationQuery</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ConversationQuery_sub"><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="ConversationQuery.html#.and">and</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#.or">or</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#addAscending">addAscending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#addDescending">addDescending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#ascending">ascending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#compact">compact</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#containedIn">containedIn</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#contains">contains</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#containsAll">containsAll</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#containsMembers">containsMembers</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#descending">descending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#doesNotExist">doesNotExist</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#endsWith">endsWith</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#equalTo">equalTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#exists">exists</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#find">find <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ConversationQuery.html#first">first <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ConversationQuery.html#greaterThan">greaterThan</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#greaterThanOrEqualTo">greaterThanOrEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#lessThan">lessThan</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#lessThanOrEqualTo">lessThanOrEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#limit">limit</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#matches">matches</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#notContainsIn">notContainsIn</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#notEqualTo">notEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#sizeEqualTo">sizeEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#skip">skip</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#startsWith">startsWith</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#withLastMessagesRefreshed">withLastMessagesRefreshed</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#withMembers">withMembers</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="IMClient.html">IMClient</a>
+                </header>
+                <div class="nav-item-sub hidden" id="IMClient_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="IMClient.html#id">id</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="IMClient.html#close">close <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#createChatRoom">createChatRoom <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#createConversation">createConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#createTemporaryConversation">createTemporaryConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#emit">emit</a></li><li class="sub-nav-item "><a href="IMClient.html#getChatRoomQuery">getChatRoomQuery</a></li><li class="sub-nav-item "><a href="IMClient.html#getConversation">getConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#getConversations">getConversations <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#getQuery">getQuery</a></li><li class="sub-nav-item "><a href="IMClient.html#getServiceConversationQuery">getServiceConversationQuery</a></li><li class="sub-nav-item "><a href="IMClient.html#off">off</a></li><li class="sub-nav-item "><a href="IMClient.html#on">on</a></li><li class="sub-nav-item "><a href="IMClient.html#once">once</a></li><li class="sub-nav-item "><a href="IMClient.html#parseConversation">parseConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#parseMessage">parseMessage <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#ping">ping <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="IMClient.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:CLOSE">CLOSE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:CONFLICT">CONFLICT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:CONVERSATION_INFO_UPDATED">CONVERSATION_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:DISCONNECT">DISCONNECT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:OFFLINE">OFFLINE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:ONLINE">ONLINE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:RECONNECT">RECONNECT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:RECONNECT_ERROR">RECONNECT_ERROR</a></li><li class="sub-nav-item "><a href="IMClient.html#event:RETRY">RETRY</a></li><li class="sub-nav-item "><a href="IMClient.html#event:SCHEDULE">SCHEDULE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:UNMUTED">UNMUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:UNREAD_MESSAGES_COUNT_UPDATE">UNREAD_MESSAGES_COUNT_UPDATE</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Message.html">Message</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Message_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Message.html#cid">cid</a></li><li class="sub-nav-item "><a href="Message.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="Message.html#from">from</a></li><li class="sub-nav-item "><a href="Message.html#id">id</a></li><li class="sub-nav-item "><a href="Message.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="Message.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="Message.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="Message.html#status">status</a></li><li class="sub-nav-item "><a href="Message.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="Message.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Message.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="Message.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="Message.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="Message.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="Message.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="MessageParser.html">MessageParser</a>
+                </header>
+                <div class="nav-item-sub hidden" id="MessageParser_sub"><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="MessageParser.html#parse">parse</a></li><li class="sub-nav-item "><a href="MessageParser.html#register">register</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Realtime.html">Realtime</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Realtime_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Realtime.html#register">register</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Realtime.html#createIMClient">createIMClient <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Realtime.html#emit">emit</a></li><li class="sub-nav-item "><a href="Realtime.html#off">off</a></li><li class="sub-nav-item "><a href="Realtime.html#on">on</a></li><li class="sub-nav-item "><a href="Realtime.html#once">once</a></li><li class="sub-nav-item "><a href="Realtime.html#pause">pause</a></li><li class="sub-nav-item "><a href="Realtime.html#resume">resume</a></li><li class="sub-nav-item "><a href="Realtime.html#retry">retry</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="Realtime.html#event:DISCONNECT">DISCONNECT</a></li><li class="sub-nav-item "><a href="Realtime.html#event:OFFLINE">OFFLINE</a></li><li class="sub-nav-item "><a href="Realtime.html#event:ONLINE">ONLINE</a></li><li class="sub-nav-item "><a href="Realtime.html#event:RECONNECT">RECONNECT</a></li><li class="sub-nav-item "><a href="Realtime.html#event:RETRY">RETRY</a></li><li class="sub-nav-item "><a href="Realtime.html#event:SCHEDULE">SCHEDULE</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="RecalledMessage.html">RecalledMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="RecalledMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="RecalledMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#from">from</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#id">id</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#status">status</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#text">text</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#type">type</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="RecalledMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ServiceConversation.html">ServiceConversation</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ServiceConversation_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="ServiceConversation.html#createdAt">createdAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#creator">creator</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#id">id</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#members">members</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#muted">muted</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#mutedMembers">mutedMembers</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#name">name</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#system">system</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#transient">transient</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="ServiceConversation.html#add">add <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#blockMembers">blockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#fetch">fetch <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#get">get</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#join">join <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#mute">mute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#muteMembers">muteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#queryBlockedMembers">queryBlockedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#queryMutedMembers">queryMutedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#quit">quit <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#remove">remove <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#save">save <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#set">set</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#subscribe">subscribe <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unblockMembers">unblockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unmute">unmute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unmuteMembers">unmuteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unsubscribe">unsubscribe <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#update">update <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="ServiceConversation.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="TemporaryConversation.html">TemporaryConversation</a>
+                </header>
+                <div class="nav-item-sub hidden" id="TemporaryConversation_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="TemporaryConversation.html#expired">expired</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#expiredAt">expiredAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#id">id</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#members">members</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="TemporaryConversation.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#emit">emit</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#off">off</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#on">on</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#once">once</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#update">update <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="TemporaryConversation.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="TextMessage.html">TextMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="TextMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="TextMessage.html#.TYPE">TYPE</a></li><li class="sub-nav-item "><a href="TextMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="TextMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="TextMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="TextMessage.html#from">from</a></li><li class="sub-nav-item "><a href="TextMessage.html#id">id</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="TextMessage.html#status">status</a></li><li class="sub-nav-item "><a href="TextMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="TextMessage.html#text">text</a></li><li class="sub-nav-item "><a href="TextMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="TextMessage.html#type">type</a></li><li class="sub-nav-item "><a href="TextMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="TextMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="TextMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="TextMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="TextMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="TextMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="TextMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="TextMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="TextMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="TypedMessage.html">TypedMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="TypedMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="TypedMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="TypedMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="TypedMessage.html#from">from</a></li><li class="sub-nav-item "><a href="TypedMessage.html#id">id</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#status">status</a></li><li class="sub-nav-item "><a href="TypedMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="TypedMessage.html#text">text</a></li><li class="sub-nav-item "><a href="TypedMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="TypedMessage.html#type">type</a></li><li class="sub-nav-item "><a href="TypedMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="TypedMessage.html#.parse">parse</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="TypedMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="TypedMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li></ul></div><div class="nav-api hidden"><h3>Interfaces</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="AVMessage.html">AVMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="AVMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="AVMessage.html#.sendOptions">sendOptions</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="AVMessage.html#.parse">parse</a></li><li class="sub-nav-item "><a href="AVMessage.html#.validate">validate</a></li><li class="sub-nav-item "><a href="AVMessage.html#getPayload">getPayload</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Plugin.html">Plugin</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Plugin_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Plugin.html#.afterMessageParse">afterMessageParse</a></li><li class="sub-nav-item "><a href="Plugin.html#.beforeMessageDispatch">beforeMessageDispatch</a></li><li class="sub-nav-item "><a href="Plugin.html#.beforeMessageParse">beforeMessageParse</a></li><li class="sub-nav-item "><a href="Plugin.html#.messageClasses">messageClasses</a></li><li class="sub-nav-item "><a href="Plugin.html#.name">name</a></li><li class="sub-nav-item "><a href="Plugin.html#.onConversationCreate">onConversationCreate</a></li><li class="sub-nav-item "><a href="Plugin.html#.onIMClientCreate">onIMClientCreate</a></li><li class="sub-nav-item "><a href="Plugin.html#.onRealtimeCreate">onRealtimeCreate</a></li></ul></div></div>
+            </li></ul></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Docs</a> »</li>
+            <li>Class: Conversation</li>
+        </ul>
+        <hr>
+        
+
+
+
+<header>
+    
+        <h2>Conversation</h2>
+        
+            <div class="class-description">普通对话
+
+无法直接实例化，请使用 <a href="IMClient.html#createConversation">IMClient#createConversation</a> 创建新的普通对话。</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+<dt>
+
+    
+    <h2 class="subsection-title constructor"><i class="fa fa-terminal"></i>Constructor</h2>
+    
+
+    <h4 class="name" id="Conversation">
+        <span class="type-signature"></span>new Conversation<span class="signature">()</span>
+                   <span class="type-signature"></span>
+        
+        <span class="source">
+            <a href="conversations_conversation.js.html#line21"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title"><i class="fa fa-chain"></i>Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="PersistentConversation.html">PersistentConversation</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title"><i class="fa fa-cube"></i>Members</h3>
+
+        <dl>
+            
+
+<dt>
+<h4 class="name" id="createdAt">
+    <span class="type-signature"></span>createdAt<span class="type-signature"> :Date</span>
+    
+    <a href="conversations_persistent-conversation.js.html#line94"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        对话创建时间
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#createdAt">PersistentConversation#createdAt</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="creator">
+    <span class="type-signature"></span>creator<span class="type-signature"> :String</span>
+    
+    <a href="conversations_persistent-conversation.js.html#line88"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        对话创建者
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#creator">PersistentConversation#creator</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="id">
+    <span class="type-signature"></span>id<span class="type-signature"> :String</span>
+    
+    <a href="conversations_conversation-base.js.html#line83"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        对话 id，对应 _Conversation 表中的 objectId
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#id">ConversationBase#id</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="lastDeliveredAt">
+    <span class="type-signature"><span class="icon green">nullable</span> </span>lastDeliveredAt<span class="type-signature"> :Date</span>
+    
+    <a href="conversations_conversation-base.js.html#line168"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        最后消息送达时间，常用来实现消息的「已送达」标记，可通过 <a href="Conversation.html#fetchReceiptTimestamps">Conversation#fetchReceiptTimestamps</a> 获取或更新该属性
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>3.4.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#lastDeliveredAt">ConversationBase#lastDeliveredAt</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="lastMessage">
+    <span class="type-signature"><span class="icon green">nullable</span> </span>lastMessage<span class="type-signature"> :<a href="Message.html">Message</a></span>
+    
+    <a href="conversations_conversation-base.js.html#line95"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        最后一条消息
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#lastMessage">ConversationBase#lastMessage</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="lastMessageAt">
+    <span class="type-signature"><span class="icon green">nullable</span> </span>lastMessageAt<span class="type-signature"> :Date</span>
+    
+    <a href="conversations_conversation-base.js.html#line89"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        最后一条消息时间
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#lastMessageAt">ConversationBase#lastMessageAt</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="lastReadAt">
+    <span class="type-signature"><span class="icon green">nullable</span> </span>lastReadAt<span class="type-signature"> :Date</span>
+    
+    <a href="conversations_conversation-base.js.html#line191"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        最后消息被阅读时间，常用来实现发送消息的「已读」标记，可通过 <a href="Conversation.html#fetchReceiptTimestamps">Conversation#fetchReceiptTimestamps</a> 获取或更新该属性
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>3.4.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#lastReadAt">ConversationBase#lastReadAt</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="members">
+    <span class="type-signature"></span>members<span class="type-signature"> :Array.&lt;String></span>
+    
+    <a href="conversations_conversation-base.js.html#line101"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        参与该对话的用户列表
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#members">PersistentConversation#members</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="muted">
+    <span class="type-signature"></span>muted<span class="type-signature"> :Boolean</span>
+    
+    <a href="conversations_persistent-conversation.js.html#line125"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        当前用户静音该对话标记
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#muted">PersistentConversation#muted</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="mutedMembers">
+    <span class="type-signature"><span class="icon green">nullable</span> </span>mutedMembers<span class="type-signature"> :Array.&lt;String></span>
+    
+    <a href="conversations_persistent-conversation.js.html#line106"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        对该对话设置了静音的用户列表
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#mutedMembers">PersistentConversation#mutedMembers</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="name">
+    <span class="type-signature"></span>name<span class="type-signature"> :String</span>
+    
+    <a href="conversations_persistent-conversation.js.html#line153"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        对话名字，对应 _Conversation 表中的 name
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#name">PersistentConversation#name</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="system">
+    <span class="type-signature"></span>system<span class="type-signature"> :Boolean</span>
+    
+    <a href="conversations_persistent-conversation.js.html#line119"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        系统对话标记
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>3.3.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#system">PersistentConversation#system</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="transient">
+    <span class="type-signature"></span>transient<span class="type-signature"> :Boolean</span>
+    
+    <a href="conversations_persistent-conversation.js.html#line112"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        暂态对话标记
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#transient">PersistentConversation#transient</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="unreadMessagesCount">
+    <span class="type-signature"></span>unreadMessagesCount<span class="type-signature"> :Number</span>
+    
+    <a href="conversations_conversation-base.js.html#line149"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        当前用户在该对话的未读消息数
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#unreadMessagesCount">ConversationBase#unreadMessagesCount</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="unreadMessagesMentioned">
+    <span class="type-signature"></span>unreadMessagesMentioned<span class="type-signature"> :Boolean</span>
+    
+    <a href="conversations_conversation-base.js.html#line130"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        当前用户是否在该对话的未读消息中被提及
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>4.0.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#unreadMessagesMentioned">ConversationBase#unreadMessagesMentioned</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+
+<dt>
+<h4 class="name" id="updatedAt">
+    <span class="type-signature"></span>updatedAt<span class="type-signature"> :Date</span>
+    
+    <a href="conversations_persistent-conversation.js.html#line100"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        对话更新时间
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#updatedAt">PersistentConversation#updatedAt</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title"><i class="fa fa-lightbulb-o"></i>Methods</h3>
+
+        <dl>
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="add">
+        <span class="type-signature"></span>add<span class="signature">(clientIds)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line362"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        增加成员
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientIds</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">新增成员 client id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>></span>
+
+
+
+
+
+- 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#add">PersistentConversation#add</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="blockMembers">
+        <span class="type-signature"></span>blockMembers<span class="signature">(clientIds)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line497"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        将用户加入该对话黑名单
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientIds</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 client id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>></span>
+
+
+
+
+
+- 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#blockMembers">PersistentConversation#blockMembers</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="count">
+        <span class="type-signature"></span>count<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;Number>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line442"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        获取对话人数，或暂态对话的在线人数
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;Number></span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#count">ConversationBase#count</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="createMessagesIterator">
+        <span class="type-signature"></span>createMessagesIterator<span class="signature">(options<span class="signature-attributes">opt</span>)</span>
+                   <span class="type-signature"> &rarr; {AsyncIterater.&lt;Promise.&lt;IteratorResult.&lt;Array.&lt;<a href="Message.html">Message</a>>>>>}</span>
+        
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line653"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        获取消息翻页迭代器
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>beforeTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Date</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">限制起始查询结果为小于该时间之前的消息，不传则为当前时间</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>beforeMessageId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">限制起始查询结果为该消息之前的消息，需要与 beforeTime 同时使用，为防止某时刻有重复消息</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>limit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">限制每页查询结果的数量，目前服务端默认为 20</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">AsyncIterater.&lt;Promise.&lt;IteratorResult.&lt;Array.&lt;<a href="Message.html">Message</a>>>>></span>
+
+
+
+
+
+- <a href="https://github.com/tc39/proposal-async-iteration">AsyncIterator</a>，调用其 next 方法返回获取下一页消息的 Promise
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#createMessagesIterator">ConversationBase#createMessagesIterator</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="prettyprint source"><code>var messageIterator = conversation.createMessagesIterator({ limit: 10 });
+messageIterator.next().then(function(result) {
+  // result: {
+  //   value: [message1, ..., message10],
+  //   done: false,
+  // }
+});
+messageIterator.next().then(function(result) {
+  // result: {
+  //   value: [message11, ..., message20],
+  //   done: false,
+  // }
+});
+messageIterator.next().then(function(result) {
+  // No more messages
+  // result: { value: [], done: true }
+});</code></pre>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="fetch">
+        <span class="type-signature"></span>fetch<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;this>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line273"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        从服务器更新对话的属性
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;this></span>
+
+
+
+
+
+- self
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#fetch">PersistentConversation#fetch</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="fetchReceiptTimestamps">
+        <span class="type-signature"></span>fetchReceiptTimestamps<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;this>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line722"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        更新对话的最新回执时间戳（lastDeliveredAt、lastReadAt）
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;this></span>
+
+
+
+
+
+- this
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>3.4.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#fetchReceiptTimestamps">ConversationBase#fetchReceiptTimestamps</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="get">
+        <span class="type-signature"></span>get<span class="signature">(key)</span>
+                   <span class="type-signature"> &rarr; {Any}</span>
+        
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line167"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        获取对话的自定义属性
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">key 属性的键名，'x' 对应 Conversation 表中的 x 列</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Any</span>
+
+
+
+
+
+- 属性的值
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>3.2.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#get">PersistentConversation#get</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="getAllMemberInfo">
+        <span class="type-signature"></span>getAllMemberInfo<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;<a href="ConversationMemberInfo.html">ConversationMemberInfo</a>>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_conversation.js.html#line86"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        获取所有成员的对话属性
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;Array.&lt;<a href="ConversationMemberInfo.html">ConversationMemberInfo</a>>></span>
+
+
+
+
+
+- 所有成员的对话属性列表
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>4.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="getMemberInfo">
+        <span class="type-signature"></span>getMemberInfo<span class="signature">(memberId)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;<a href="ConversationMemberInfo.html">ConversationMemberInfo</a>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_conversation.js.html#line100"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        获取指定成员的对话属性
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>memberId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 Id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;<a href="ConversationMemberInfo.html">ConversationMemberInfo</a>></span>
+
+
+
+
+
+- 指定成员的对话属性
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>4.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="join">
+        <span class="type-signature"></span>join<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;this>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line411"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        （当前用户）加入该对话
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;this></span>
+
+
+
+
+
+- self
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#join">PersistentConversation#join</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="mute">
+        <span class="type-signature"></span>mute<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;this>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line283"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        静音，客户端拒绝收到服务器端的离线推送通知
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;this></span>
+
+
+
+
+
+- self
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#mute">PersistentConversation#mute</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="muteMembers">
+        <span class="type-signature"></span>muteMembers<span class="signature">(clientIds)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line436"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        在该对话中禁言成员
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientIds</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 client id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>></span>
+
+
+
+
+
+- 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#muteMembers">PersistentConversation#muteMembers</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="queryBlockedMembers">
+        <span class="type-signature"></span>queryBlockedMembers<span class="signature">(options<span class="signature-attributes">opt</span>)</span>
+                   <span class="type-signature"> &rarr; {<a href="global.html#PagedResults">PagedResults</a>.&lt;string>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line549"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        查询该对话黑名单
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>limit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">返回的成员数量，服务器默认值 10</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">从指定 next 开始查询，与 limit 一起使用可以完成翻页</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type"><a href="global.html#PagedResults">PagedResults</a>.&lt;string></span>
+
+
+
+
+
+- 查询结果。其中的 cureser 存在表示还有更多结果。
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#queryBlockedMembers">PersistentConversation#queryBlockedMembers</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="queryMessages">
+        <span class="type-signature"></span>queryMessages<span class="signature">(options<span class="signature-attributes">opt</span>)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;Array.&lt;<a href="Message.html">Message</a>>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line517"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        查询消息记录
+如果仅需实现消息向前记录翻页查询需求，建议使用 <a href="Conversation.html#createMessagesIterator">Conversation#createMessagesIterator</a>。
+不论何种方向，获得的消息都是按照时间升序排列的。
+startClosed 与 endClosed 用于指定查询区间的开闭。
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>limit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">限制查询结果的数量，目前服务端默认为 20</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">指定查询的富媒体消息类型，不指定则查询所有消息。</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">MessageQueryDirection</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">查询的方向。
+在不指定的情况下如果 startTime 大于 endTime，则为从新到旧查询，可以实现加载聊天记录等场景。
+如果 startTime 小于 endTime，则为从旧到新查询，可以实现弹幕等场景。</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>startTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Date</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">从该时间开始查询，不传则从当前时间开始查询</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>startMessageId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">从该消息之前开始查询，需要与 startTime 同时使用，为防止某时刻有重复消息</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>startClosed</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">指定查询范围是否包括开始的时间点，默认不包括</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>endTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Date</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">查询到该时间为止，不传则查询最早消息为止</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>endMessageId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">查询到该消息为止，需要与 endTime 同时使用，为防止某时刻有重复消息</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>endClosed</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">指定查询范围是否包括结束的时间点，默认不包括</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>beforeTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Date</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">DEPRECATED: 使用 startTime 代替。限制查询结果为小于该时间之前的消息，不传则为当前时间</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>beforeMessageId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">DEPRECATED: 使用 startMessageId 代替。
+限制查询结果为该消息之前的消息，需要与 beforeTime 同时使用，为防止某时刻有重复消息</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>afterTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Date</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">DEPRECATED: 使用 endTime 代替。限制查询结果为大于该时间之前的消息</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>afterMessageId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">DEPRECATED: 使用 endMessageId 代替。
+限制查询结果为该消息之后的消息，需要与 afterTime 同时使用，为防止某时刻有重复消息</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;Array.&lt;<a href="Message.html">Message</a>>></span>
+
+
+
+
+
+- 消息列表
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#queryMessages">ConversationBase#queryMessages</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="queryMutedMembers">
+        <span class="type-signature"></span>queryMutedMembers<span class="signature">(options<span class="signature-attributes">opt</span>)</span>
+                   <span class="type-signature"> &rarr; {<a href="global.html#PagedResults">PagedResults</a>.&lt;string>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line474"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        查询该对话禁言成员列表
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>limit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">返回的成员数量，服务器默认值 10</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">从指定 next 开始查询，与 limit 一起使用可以完成翻页。</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type"><a href="global.html#PagedResults">PagedResults</a>.&lt;string></span>
+
+
+
+
+
+- 查询结果。其中的 cureser 存在表示还有更多结果。
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#queryMutedMembers">PersistentConversation#queryMutedMembers</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="quit">
+        <span class="type-signature"></span>quit<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;this>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line423"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        （当前用户）退出该对话
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;this></span>
+
+
+
+
+
+- self
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#quit">PersistentConversation#quit</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="read">
+        <span class="type-signature"></span>read<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;this>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line689"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        将该会话标记为已读
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;this></span>
+
+
+
+
+
+- self
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#read">ConversationBase#read</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="recall">
+        <span class="type-signature"></span>recall<span class="signature">(message)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;<a href="RecalledMessage.html">RecalledMessage</a>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line486"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        撤回已发送的消息
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="AVMessage.html">AVMessage</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">要撤回的消息，该消息必须是由当前用户发送的。也可以提供一个包含消息 {id, timestamp} 的对象</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;<a href="RecalledMessage.html">RecalledMessage</a>></span>
+
+
+
+
+
+- 一条已撤回的消息
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#recall">ConversationBase#recall</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="remove">
+        <span class="type-signature"></span>remove<span class="signature">(clientIds)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line387"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        剔除成员
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientIds</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 client id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>></span>
+
+
+
+
+
+- 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#remove">PersistentConversation#remove</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="save">
+        <span class="type-signature"></span>save<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;this>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line244"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        保存当前对话的属性至服务器
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;this></span>
+
+
+
+
+
+- self
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#save">PersistentConversation#save</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="send">
+        <span class="type-signature"></span>send<span class="signature">(message, options<span class="signature-attributes">opt</span>)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;<a href="Message.html">Message</a>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line295"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        发送消息
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Message.html">Message</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">消息，Message 及其子类的实例</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">since v3.3.0，发送选项
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>transient</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">since v3.3.1，是否作为暂态消息发送</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>receipt</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">是否需要回执，仅在普通对话中有效</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>will</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">since v3.4.0，是否指定该消息作为「掉线消息」发送，
+「掉线消息」会延迟到当前用户掉线后发送，常用来实现「下线通知」功能</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>priority</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">MessagePriority</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">消息优先级，仅在暂态对话中有效，
+see: MessagePriority</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pushData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">消息对应的离线推送内容，如果消息接收方不在线，会推送指定的内容。其结构说明参见: <a href="https://url.leanapp.cn/pushData">推送消息内容</a></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;<a href="Message.html">Message</a>></span>
+
+
+
+
+
+- 发送的消息
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#send">ConversationBase#send</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="set">
+        <span class="type-signature"></span>set<span class="signature">(key, value)</span>
+                   <span class="type-signature"> &rarr; {this}</span>
+        
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line187"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        设置对话的自定义属性
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">属性的键名，'x' 对应 Conversation 表中的 x 列，支持使用 'x.y.z' 来修改对象的部分字段。</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">属性的值</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">this</span>
+
+
+
+
+
+- self
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>3.2.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#set">PersistentConversation#set</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="prettyprint source"><code>// 设置对话的 color 属性
+conversation.set('color', {
+  text: '#000',
+  background: '#DDD',
+});
+// 设置对话的 color.text 属性
+conversation.set('color.text', '#333');</code></pre>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="toFullJSON">
+        <span class="type-signature"></span>toFullJSON<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Object}</span>
+        
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line214"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        返回 JSON 格式的对话，与 toJSON 不同的是，该对象包含了完整的信息，可以通过 <a href="IMClient.html#parseConversation">IMClient#parseConversation</a> 反序列化。
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Object</span>
+
+
+
+
+
+- 返回值是一个 plain Object
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>4.0.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#toFullJSON">ConversationBase#toFullJSON</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="toJSON">
+        <span class="type-signature"></span>toJSON<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Object}</span>
+        
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line240"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        返回 JSON 格式的对话
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Object</span>
+
+
+
+
+
+- 返回值是一个 plain Object
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>4.0.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#toJSON">ConversationBase#toJSON</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="unblockMembers">
+        <span class="type-signature"></span>unblockMembers<span class="signature">(clientIds)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line522"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        将用户移出该对话黑名单
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientIds</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 client id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>></span>
+
+
+
+
+
+- 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#unblockMembers">PersistentConversation#unblockMembers</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="unmute">
+        <span class="type-signature"></span>unmute<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;this>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line301"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        取消静音
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;this></span>
+
+
+
+
+
+- self
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#unmute">PersistentConversation#unmute</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="unmuteMembers">
+        <span class="type-signature"></span>unmuteMembers<span class="signature">(clientIds)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_persistent-conversation.js.html#line454"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        在该对话中解除成员禁言
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientIds</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 client id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;<a href="global.html#PartiallySuccess">PartiallySuccess</a>></span>
+
+
+
+
+
+- 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="PersistentConversation.html#unmuteMembers">PersistentConversation#unmuteMembers</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="update">
+        <span class="type-signature"></span>update<span class="signature">(message, newMessage)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;<a href="AVMessage.html">AVMessage</a>>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line474"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        修改已发送的消息
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="AVMessage.html">AVMessage</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">要修改的消息，该消息必须是由当前用户发送的。也可以提供一个包含消息 {id, timestamp} 的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>newMessage</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="AVMessage.html">AVMessage</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">新的消息</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;<a href="AVMessage.html">AVMessage</a>></span>
+
+
+
+
+
+- 更新后的消息
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#update">ConversationBase#update</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="updateMemberRole">
+        <span class="type-signature"></span>updateMemberRole<span class="signature">(memberId, role)</span>
+                   <span class="type-signature"> &rarr; {Promise.&lt;this>}</span>
+        <span class="async">[async]</span>
+        <span class="source">
+            <a href="conversations_conversation.js.html#line118"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        更新指定用户的角色
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>memberId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 Id</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>role</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-leancloud-realtime.html#.ConversationMemberRole">module:leancloud-realtime.ConversationMemberRole</a></span>
+|
+
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">角色</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise.&lt;this></span>
+
+
+
+
+
+- self
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>4.0.0</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title"><i class="fa fa-refresh"></i>Events</h3>
+
+        <dl>
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:BLOCKED">
+        BLOCKED
+        
+        <span class="source">
+            <a href="im-client.js.html#line539"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        当前用户被加入当前对话的黑名单
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>blockedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:BLOCKED">ConversationBase#event:BLOCKED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:INFO_UPDATED">
+        INFO_UPDATED
+        
+        <span class="source">
+            <a href="im-client.js.html#line708"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        有对话信息被更新
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>attributes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">被更新的属性</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>updatedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:INFO_UPDATED">ConversationBase#event:INFO_UPDATED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:INVITED">
+        INVITED
+        
+        <span class="source">
+            <a href="im-client.js.html#line398"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        当前用户被添加至当前对话
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>invitedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该移除操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:INVITED">ConversationBase#event:INVITED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:KICKED">
+        KICKED
+        
+        <span class="source">
+            <a href="im-client.js.html#line420"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        当前用户被从当前对话中移除
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>kickedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该移除操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:KICKED">ConversationBase#event:KICKED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:LAST_DELIVERED_AT_UPDATE">
+        LAST_DELIVERED_AT_UPDATE
+        
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line177"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        最后消息送达时间更新
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>3.4.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:LAST_DELIVERED_AT_UPDATE">ConversationBase#event:LAST_DELIVERED_AT_UPDATE</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:LAST_READ_AT_UPDATE">
+        LAST_READ_AT_UPDATE
+        
+        <span class="source">
+            <a href="conversations_conversation-base.js.html#line200"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        最后消息被阅读时间更新
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>3.4.0</li></ul></dd>
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:LAST_READ_AT_UPDATE">ConversationBase#event:LAST_READ_AT_UPDATE</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MEMBER_INFO_UPDATED">
+        MEMBER_INFO_UPDATED
+        
+        <span class="source">
+            <a href="im-client.js.html#line681"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        有成员的对话信息被更新
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>member</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">被更新对话信息的成员 id</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>memberInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ConversationMumberInfo</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">被更新的成员对话信息</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>updatedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MEMBER_INFO_UPDATED">ConversationBase#event:MEMBER_INFO_UPDATED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MEMBERS_BLOCKED">
+        MEMBERS_BLOCKED
+        
+        <span class="source">
+            <a href="im-client.js.html#line493"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        有成员被加入当前对话的黑名单
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>members</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 id 列表</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>blockedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MEMBERS_BLOCKED">ConversationBase#event:MEMBERS_BLOCKED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MEMBERS_JOINED">
+        MEMBERS_JOINED
+        
+        <span class="source">
+            <a href="im-client.js.html#line444"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        有成员被添加至当前对话
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>members</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">被添加的成员 id 列表</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>invitedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">邀请者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MEMBERS_JOINED">ConversationBase#event:MEMBERS_JOINED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MEMBERS_LEFT">
+        MEMBERS_LEFT
+        
+        <span class="source">
+            <a href="im-client.js.html#line469"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        有成员被从当前对话中移除
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>members</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">被移除的成员 id 列表</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>kickedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该移除操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MEMBERS_LEFT">ConversationBase#event:MEMBERS_LEFT</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MEMBERS_MUTED">
+        MEMBERS_MUTED
+        
+        <span class="source">
+            <a href="im-client.js.html#line583"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        有成员在当前对话中被禁言
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>members</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 id 列表</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>mutedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MEMBERS_MUTED">ConversationBase#event:MEMBERS_MUTED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MEMBERS_UNBLOCKED">
+        MEMBERS_UNBLOCKED
+        
+        <span class="source">
+            <a href="im-client.js.html#line517"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        有成员被移出当前对话的黑名单
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>members</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 id 列表</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>unblockedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MEMBERS_UNBLOCKED">ConversationBase#event:MEMBERS_UNBLOCKED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MEMBERS_UNMUTED">
+        MEMBERS_UNMUTED
+        
+        <span class="source">
+            <a href="im-client.js.html#line607"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        有成员在当前对话中被解除禁言
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>members</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成员 id 列表</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>unmutedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MEMBERS_UNMUTED">ConversationBase#event:MEMBERS_UNMUTED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MESSAGE">
+        MESSAGE
+        
+        <span class="source">
+            <a href="im-client.js.html#line790"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        当前对话收到消息
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Message.html">Message</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MESSAGE">ConversationBase#event:MESSAGE</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MESSAGE_RECALL">
+        MESSAGE_RECALL
+        
+        <span class="source">
+            <a href="im-client.js.html#line347"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        消息被撤回
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="AVMessage.html">AVMessage</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">被撤回的消息</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reason</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#PatchReason">PatchReason</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">撤回的原因，不存在代表是发送者主动撤回</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MESSAGE_RECALL">ConversationBase#event:MESSAGE_RECALL</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MESSAGE_UPDATE">
+        MESSAGE_UPDATE
+        
+        <span class="source">
+            <a href="im-client.js.html#line363"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        消息被修改
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="AVMessage.html">AVMessage</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">被修改的消息</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reason</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#PatchReason">PatchReason</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">修改的原因，不存在代表是发送者主动修改</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MESSAGE_UPDATE">ConversationBase#event:MESSAGE_UPDATE</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:MUTED">
+        MUTED
+        
+        <span class="source">
+            <a href="im-client.js.html#line629"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        有成员在当前对话中被禁言
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>mutedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:MUTED">ConversationBase#event:MUTED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:UNBLOCKED">
+        UNBLOCKED
+        
+        <span class="source">
+            <a href="im-client.js.html#line560"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        当前用户被移出当前对话的黑名单
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>unblockedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:UNBLOCKED">ConversationBase#event:UNBLOCKED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:UNMUTED">
+        UNMUTED
+        
+        <span class="source">
+            <a href="im-client.js.html#line650"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        有成员在当前对话中被解除禁言
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>unmutedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该操作的发起者 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ConversationBase.html#event:UNMUTED">ConversationBase#event:UNMUTED</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        </dl>
+    
+</article>
+
+
+
+
+
+        <hr>
+        <footer>
+            <strong></strong><br/>
+            Documented with <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+        </footer>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+window.isApi = true
+window.isManual = false
+window.doc = {
+    name: 'Conversation',
+    longname: 'Conversation',
+}
+
+if (!doc.name) isApi = false
+
+</script>
+<script src="js/rtd.js"></script>
+</body>
+</html>

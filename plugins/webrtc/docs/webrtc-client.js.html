@@ -1,0 +1,254 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Source: webrtc-client.js | leancloud-realtime-plugin-webrtc</title>
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+</head>
+<body>
+<div class="main-container">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label for="nav-trigger" class="navicon-button x">
+      <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+    <nav class="lnb" id="lnb">
+        <div class="nav-main">
+            <h1><a href="index.html" class="link">leancloud-realtime-plugin-webrtc</a></h1>
+            <span class="version">
+            
+                v1.0.0
+            
+            </span>
+        </div>
+        <div class="nav-search js-search">
+            <input type="text" placeholder="Search docs">
+            <ul class="searched-list"></ul>
+        </div>
+
+        
+
+        <div class="scroll">
+        <div class="nav-api hidden"><h3>Global</h3><ul><li class="nav-item"><a href="global.html#createWebRTCClient">createWebRTCClient</a></li></ul></div><div class="nav-api hidden"><h3>Modules</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="module-leancloud-realtime-plugin-webrtc.html">leancloud-realtime-plugin-webrtc</a>
+                </header>
+                <div class="nav-item-sub hidden" id="module_leancloud-realtime-plugin-webrtc_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-webrtc.html#.isWebRTCSupported">isWebRTCSupported</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-webrtc.html#.WebRTCPlugin">WebRTCPlugin</a></li></ul></div></div>
+            </li></ul></div><div class="nav-api hidden"><h3>Classes</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Call.html">Call</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Call_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Call.html#state">state</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Call.html#close">close</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="Call.html#event:close">close</a></li><li class="sub-nav-item "><a href="Call.html#event:connect">connect</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="IncomingCall.html">IncomingCall</a>
+                </header>
+                <div class="nav-item-sub hidden" id="IncomingCall_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="IncomingCall.html#from">from</a></li><li class="sub-nav-item "><a href="IncomingCall.html#state">state</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="IncomingCall.html#accept">accept</a></li><li class="sub-nav-item "><a href="IncomingCall.html#close">close</a></li><li class="sub-nav-item "><a href="IncomingCall.html#refuse">refuse</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="IncomingCall.html#event:cancel">cancel</a></li><li class="sub-nav-item "><a href="IncomingCall.html#event:close">close</a></li><li class="sub-nav-item "><a href="IncomingCall.html#event:connect">connect</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="OutgoingCall.html">OutgoingCall</a>
+                </header>
+                <div class="nav-item-sub hidden" id="OutgoingCall_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="OutgoingCall.html#state">state</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#to">to</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="OutgoingCall.html#cancel">cancel</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#close">close</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="OutgoingCall.html#event:close">close</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#event:connect">connect</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#event:refuse">refuse</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="WebRTCClient.html">WebRTCClient</a>
+                </header>
+                <div class="nav-item-sub hidden" id="WebRTCClient_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="WebRTCClient.html#id">id</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="WebRTCClient.html#call">call</a></li><li class="sub-nav-item "><a href="WebRTCClient.html#close">close</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="WebRTCClient.html#event:call">call</a></li><li class="sub-nav-item "><a href="WebRTCClient.html#event:conflict">conflict</a></li></ul></div></div>
+            </li></ul></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Docs</a> »</li>
+            <li>Source: webrtc-client.js</li>
+        </ul>
+        <hr>
+        
+
+
+
+    
+<article>
+    <pre class="prettyprint source linenums"><code>import EventEmitter from 'eventemitter3';
+import OutgoingCall from './call/outgoing-call';
+import IncomingCall from './call/incoming-call';
+import Offer from './signalings/offer';
+
+const DEFAULT_RTCCONF = {
+  iceServers: [
+    {
+      urls: [
+        'stun:stun.l.google.com:19302',
+        'stun:stun1.l.google.com:19302',
+        'stun:stun2.l.google.com:19302',
+        'stun:stun3.l.google.com:19302',
+        'stun:stun4.l.google.com:19302',
+        'stun:stun.ekiga.net',
+        'stun:stun.ideasip.com',
+        'stun:stun.rixtelecom.se',
+        'stun:stun.schlund.de',
+        'stun:stun.stunprotocol.org:3478',
+        'stun:stun.voiparound.com',
+        'stun:stun.voipbuster.com',
+        'stun:stun.voipstunt.com',
+        'stun:stun.voxgratia.org',
+      ],
+    },
+  ],
+};
+
+export default class WebRTCClient extends EventEmitter {
+  /**
+   * 无法直接实例化，请使用 {@link createWebRTCClient Realtime#createWebRTCClient} 创建新的 WebRTCClient
+   */
+  constructor(id, options) {
+    if (typeof id !== 'string') {
+      throw new TypeError('id is not a string');
+    }
+    super();
+    /** @type {string} */
+    this.id = id;
+    this.options = {
+      RTCConfiguration: DEFAULT_RTCCONF,
+      ...options,
+    };
+  }
+
+  _open(realtime, clientOptions) {
+    return realtime
+      .createIMClient(this.id, clientOptions, 'webrtc')
+      .then(imClient => {
+        this._imClient = imClient;
+        this.id = imClient.id;
+        imClient.on('message', (message, conversation) => {
+          if (message instanceof Offer) {
+            return this._handleOffer(message, conversation);
+          }
+          return false;
+        });
+        /**
+         * 用户在其他客户端登录，当前客户端被服务端强行下线。详见文档「单点登录」章节。
+         * @event WebRTCClient#conflict
+         */
+        imClient.on('conflict', (...payload) =>
+          this.emit('conflict', ...payload)
+        );
+        return this;
+      });
+  }
+
+  /**
+   * 关闭客户端
+   * @return {Promise}
+   */
+  close() {
+    return this._imClient.close();
+  }
+
+  /**
+   * 呼叫另一个用户
+   * @param  {string} targetId 用户 ID
+   * @param  {MediaStream} stream 本地流媒体，参见 {@link https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API MediaStream}
+   * @return {Promise.&lt;OutgoingCall>} 呼出通话
+   */
+  call(targetId, stream) {
+    if (typeof targetId !== 'string') {
+      throw new TypeError('target id is not a string');
+    }
+    if (!stream) {
+      throw new TypeError('a MediaStream instance is required to make a call');
+    }
+    return this._imClient.ping([targetId]).then(onlineClients => {
+      if (!onlineClients.length) {
+        throw new Error(`Call failed as ${targetId} is not online`);
+      }
+      const outgoingCall = new OutgoingCall(
+        targetId,
+        null,
+        this.options.RTCConfiguration
+      );
+      const promise = new Promise(resolve => {
+        outgoingCall._peerConnection.onnegotiationneeded = resolve;
+      });
+      outgoingCall._peerConnection.addStream(stream);
+      return promise
+        .then(() =>
+          Promise.all([
+            this._imClient.createConversation({
+              members: [targetId],
+              unique: true,
+            }),
+            outgoingCall._peerConnection
+              .createOffer()
+              .then(localDescription => {
+                outgoingCall._peerConnection.setLocalDescription(
+                  localDescription
+                );
+              }),
+          ])
+        )
+        .then(([conversation]) => {
+          outgoingCall._setConversation(conversation);
+          return conversation.send(
+            new Offer(outgoingCall._peerConnection.localDescription)
+          );
+        })
+        .then(() => outgoingCall);
+    });
+  }
+
+  _handleOffer(offer, conversation) {
+    const incomingCall = new IncomingCall(
+      offer,
+      conversation,
+      this.options.RTCConfiguration
+    );
+    /**
+     * 收到其他用户的呼叫
+     * @event WebRTCClient#call
+     * @param {incomingCall} incomingCall 呼入通话
+     */
+    this.emit('call', incomingCall);
+  }
+}
+</code></pre>
+</article>
+
+
+
+
+
+        <hr>
+        <footer>
+            <strong></strong><br/>
+            Documented with <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+        </footer>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+window.isApi = true
+window.isManual = false
+window.doc = {
+    name: '',
+    longname: '',
+}
+
+if (!doc.name) isApi = false
+
+</script>
+<script src="js/rtd.js"></script>
+</body>
+</html>

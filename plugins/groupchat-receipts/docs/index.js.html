@@ -1,0 +1,180 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Source: index.js | leancloud-realtime-plugin-groupchat-receipts</title>
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+</head>
+<body>
+<div class="main-container">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label for="nav-trigger" class="navicon-button x">
+      <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+    <nav class="lnb" id="lnb">
+        <div class="nav-main">
+            <h1><a href="index.html" class="link">leancloud-realtime-plugin-groupchat-receipts</a></h1>
+            <span class="version">
+            
+                v1.0.0
+            
+            </span>
+        </div>
+        <div class="nav-search js-search">
+            <input type="text" placeholder="Search docs">
+            <ul class="searched-list"></ul>
+        </div>
+
+        
+
+        <div class="scroll">
+        <div class="nav-api hidden"><h3>Modules</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="module-leancloud-realtime-plugin-groupchat-receipts.html">leancloud-realtime-plugin-groupchat-receipts</a>
+                </header>
+                <div class="nav-item-sub hidden" id="module_leancloud-realtime-plugin-groupchat-receipts_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-groupchat-receipts.html#.GroupchatReceiptsPlugin">GroupchatReceiptsPlugin</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-groupchat-receipts.html#~event:lastreadtimestampsupdate">lastreadtimestampsupdate</a></li></ul></div><div><div class="member-type">Typedef</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-groupchat-receipts.html#~GroupchatLastReadTimestamps">GroupchatLastReadTimestamps</a></li></ul></div></div>
+            </li></ul></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Docs</a> »</li>
+            <li>Source: index.js</li>
+        </ul>
+        <hr>
+        
+
+
+
+    
+<article>
+    <pre class="prettyprint source linenums"><code>/** @module leancloud-realtime-plugin-groupchat-receipts */
+
+import ReadReceipt from './read-receipt';
+import { name } from '../package.json';
+
+/**
+ * @typedef {Object.&lt;String, Date>} GroupchatLastReadTimestamps 对话成员 ID - 最后已读消息时间
+ */
+
+/**
+ * 群聊已读状态插件。
+ * 使用后多人 Conversation 会增加 lastReadTimestamps 属性，该属性是 对话成员 ID - 最后已读消息时间 的键值对。
+ * 在首次查询该会话的消息记录后，lastReadTimestamps 将会得到初始值，
+ * 之后在该属性有变化时 Conversation 会派发 lastreadtimestampsupdate 事件。
+ * @example
+ * var realtime = new Realtime({
+ *   appId: appId,
+ *   appKey: appKey,
+ *   server: server,
+ *   plugins: [GroupchatReceiptsPlugin],
+ * });
+ */
+export const GroupchatReceiptsPlugin = {
+  name,
+  messageClasses: [ReadReceipt],
+  onIMClientCreate: client => {
+    const originalSendReadCommand = client._sendReadCommand;
+    // eslint-disable-next-line no-param-reassign
+    client._sendReadCommand = (conversations, ...args) => {
+      conversations.forEach(conversation => {
+        if (!conversation.transient &amp;&amp; conversation.members.length > 2) {
+          conversation
+            .send(new ReadReceipt(conversation.lastMessageAt || new Date()))
+            .catch(error =>
+              console.warn(`Sending groupchat receipt fail: ${error.message}`)
+            );
+        }
+      });
+      return originalSendReadCommand.call(client, conversations, ...args);
+    };
+  },
+  onConversationCreate: conversation => {
+    const originalQueryMessages = conversation.queryMessages;
+    // eslint-disable-next-line no-param-reassign
+    conversation.queryMessages = (...args) => {
+      if (
+        !conversation.transient &amp;&amp;
+        conversation.members.length > 2 &amp;&amp;
+        !conversation.lastReadTimestamps
+      ) {
+        conversation
+          ._fetchAllReceiptTimestamps()
+          .then(maxReadTuple => {
+            // eslint-disable-next-line no-param-reassign
+            conversation.lastReadTimestamps = maxReadTuple.reduce(
+              (result, { pid, lastReadAt }) =>
+                Object.assign(result, { [pid]: lastReadAt }),
+              {}
+            );
+            conversation.emit(
+              'lastreadtimestampsupdate',
+              conversation.lastReadTimestamps
+            );
+          })
+          .catch(error =>
+            console.warn(`Initialize group receipts fail: ${error.message}`)
+          );
+      }
+      return originalQueryMessages.call(conversation, ...args);
+    };
+  },
+  beforeMessageDispatch: (message, conversation) => {
+    if (message.type === ReadReceipt.TYPE) {
+      if (conversation.lastReadTimestamps) {
+        // eslint-disable-next-line no-param-reassign
+        conversation.lastReadTimestamps[message.from] = message.timestamp;
+        /**
+         * 群聊的已读状态更新，由 Conversation 派发
+         * @event lastreadtimestampsupdate
+         * @param {GroupchatLastReadTimestamps} updatedTimestamps 有更新的成员的最后已读消息时间
+         */
+        conversation.emit('lastreadtimestampsupdate', {
+          [message.from]: message.timestamp,
+        });
+      }
+      return false;
+    }
+    return true;
+  },
+};
+
+export { ReadReceipt };
+</code></pre>
+</article>
+
+
+
+
+
+        <hr>
+        <footer>
+            <strong></strong><br/>
+            Documented with <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+        </footer>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+window.isApi = true
+window.isManual = false
+window.doc = {
+    name: '',
+    longname: '',
+}
+
+if (!doc.name) isApi = false
+
+</script>
+<script src="js/rtd.js"></script>
+</body>
+</html>

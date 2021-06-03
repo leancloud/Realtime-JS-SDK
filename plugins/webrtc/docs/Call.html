@@ -1,0 +1,648 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class: Call | leancloud-realtime-plugin-webrtc</title>
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+</head>
+<body>
+<div class="main-container">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label for="nav-trigger" class="navicon-button x">
+      <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+    <nav class="lnb" id="lnb">
+        <div class="nav-main">
+            <h1><a href="index.html" class="link">leancloud-realtime-plugin-webrtc</a></h1>
+            <span class="version">
+            
+                v1.0.0
+            
+            </span>
+        </div>
+        <div class="nav-search js-search">
+            <input type="text" placeholder="Search docs">
+            <ul class="searched-list"></ul>
+        </div>
+
+        
+
+        <div class="scroll">
+        <div class="nav-api hidden"><h3>Global</h3><ul><li class="nav-item"><a href="global.html#createWebRTCClient">createWebRTCClient</a></li></ul></div><div class="nav-api hidden"><h3>Modules</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="module-leancloud-realtime-plugin-webrtc.html">leancloud-realtime-plugin-webrtc</a>
+                </header>
+                <div class="nav-item-sub hidden" id="module_leancloud-realtime-plugin-webrtc_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-webrtc.html#.isWebRTCSupported">isWebRTCSupported</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-webrtc.html#.WebRTCPlugin">WebRTCPlugin</a></li></ul></div></div>
+            </li></ul></div><div class="nav-api hidden"><h3>Classes</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Call.html">Call</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Call_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Call.html#state">state</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Call.html#close">close</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="Call.html#event:close">close</a></li><li class="sub-nav-item "><a href="Call.html#event:connect">connect</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="IncomingCall.html">IncomingCall</a>
+                </header>
+                <div class="nav-item-sub hidden" id="IncomingCall_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="IncomingCall.html#from">from</a></li><li class="sub-nav-item "><a href="IncomingCall.html#state">state</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="IncomingCall.html#accept">accept</a></li><li class="sub-nav-item "><a href="IncomingCall.html#close">close</a></li><li class="sub-nav-item "><a href="IncomingCall.html#refuse">refuse</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="IncomingCall.html#event:cancel">cancel</a></li><li class="sub-nav-item "><a href="IncomingCall.html#event:close">close</a></li><li class="sub-nav-item "><a href="IncomingCall.html#event:connect">connect</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="OutgoingCall.html">OutgoingCall</a>
+                </header>
+                <div class="nav-item-sub hidden" id="OutgoingCall_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="OutgoingCall.html#state">state</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#to">to</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="OutgoingCall.html#cancel">cancel</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#close">close</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="OutgoingCall.html#event:close">close</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#event:connect">connect</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#event:refuse">refuse</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="WebRTCClient.html">WebRTCClient</a>
+                </header>
+                <div class="nav-item-sub hidden" id="WebRTCClient_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="WebRTCClient.html#id">id</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="WebRTCClient.html#call">call</a></li><li class="sub-nav-item "><a href="WebRTCClient.html#close">close</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="WebRTCClient.html#event:call">call</a></li><li class="sub-nav-item "><a href="WebRTCClient.html#event:conflict">conflict</a></li></ul></div></div>
+            </li></ul></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Docs</a> »</li>
+            <li>Class: Call</li>
+        </ul>
+        <hr>
+        
+
+
+
+<header>
+    
+        <h2>Call</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+<dt>
+
+    
+
+    <h4 class="name" id="Call">
+        <span class="type-signature"><span class="icon green">abstract</span> </span>new Call<span class="signature">()</span>
+                   <span class="type-signature"></span>
+        
+        <span class="source">
+            <a href="call_call.js.html#line13"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        <a href="IncomingCall.html">IncomingCall</a> 与 <a href="OutgoingCall.html">OutgoingCall</a> 的基类
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title"><i class="fa fa-cube"></i>Members</h3>
+
+        <dl>
+            
+
+<dt>
+<h4 class="name" id="state">
+    <span class="type-signature"><span class="icon green">readonly</span> </span>state<span class="type-signature"> :string</span>
+    
+    <a href="call_call.js.html#line45"><i class="source fa fa-file-code-o"></i></a>
+    
+</h4>
+
+
+</dt>
+<dd>
+    
+    <div class="description">
+        当前通话状态
+（<code>calling</code>, <code>connected</code>, <code>closed</code>,
+<code>refused</code>, <code>canceled</code>）
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title"><i class="fa fa-lightbulb-o"></i>Methods</h3>
+
+        <dl>
+                
+
+<dt>
+
+    
+
+    <h4 class="name" id="close">
+        <span class="type-signature"></span>close<span class="signature">()</span>
+                   <span class="type-signature"> &rarr; {Promise}</span>
+        
+        <span class="source">
+            <a href="call_call.js.html#line53"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        结束通话
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
+
+
+
+<span class="param-type">Promise</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title"><i class="fa fa-refresh"></i>Events</h3>
+
+        <dl>
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:close">
+        close
+        
+        <span class="source">
+            <a href="call_call.js.html#line65"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        通话结束，可能是对方挂断或网络中断
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        
+            
+
+<dt>
+
+    
+
+    <h4 class="name" id="event:connect">
+        connect
+        
+        <span class="source">
+            <a href="call_call.js.html#line28"><i class="source fa fa-file-code-o"></i></a>
+        </span>
+    </h4>
+
+    
+
+    
+
+    
+
+</dt>
+
+<dd>
+    
+    <div class="description">
+        通话连接成功
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>stram</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">MediaStream</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">对方的媒体流</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+        </dl>
+    
+</article>
+
+
+
+
+
+        <hr>
+        <footer>
+            <strong></strong><br/>
+            Documented with <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+        </footer>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+window.isApi = true
+window.isManual = false
+window.doc = {
+    name: 'Call',
+    longname: 'Call',
+}
+
+if (!doc.name) isApi = false
+
+</script>
+<script src="js/rtd.js"></script>
+</body>
+</html>

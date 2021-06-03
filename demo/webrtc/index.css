@@ -1,0 +1,157 @@
+html {
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+input, button {
+  padding: 0.3em .6em;
+  border: none;
+  font-size: 24px;
+}
+input[type="text"] {
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+}
+button {
+  display: inline-flex;
+  margin: 4px;
+  border-radius: 3px;
+}
+a:link {
+  color: #2c97e8;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+#remote_video {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #111;
+  top: 0;
+  left: 0;
+}
+
+#local_video {
+  height: 20%;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  height:100%;
+}
+
+#client {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: #CCC;
+  padding: .5em;
+  z-index: 1;
+  max-width: 6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+#controller {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: .5em;
+  z-index: 1;
+  width: 100%;
+  text-align: left;
+}
+
+#controller > div {
+  float: right;
+  margin-right: 1em;
+}
+
+#incoming-call {
+  font-size: 2em;
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  height: 130px;
+  background: rgba(0,0,0,.75);
+  color: white;
+  padding: 20px 0;
+  margin-top: -85px;
+  z-index: 2;
+}
+#caller-id {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+.button-success {
+  background: #388E3C;
+  color: white;
+}
+
+.button-error {
+  background: #B71C1C;
+  color: white;
+}
+
+.button-active {
+  color: #2196F3;
+}
+
+.hint {
+  color: #999;
+  font-size: 70%;
+}
+
+#incoming-call button,
+#controller button {
+  font-size: 36px;
+}
+
+#calling-hint {
+  position: fixed;
+  top: 50%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: -20px;
+  text-align: center;
+  width: 100%;
+}
+
+#logo {
+  margin-top: 0;
+  font-family: radikal;
+}
+#logo > .title {
+  font-size: 32px;
+}
+.title {
+  color: #2c97e8;
+}
+
+#unsupported,
+#login,
+#call {
+  background: #EEE;
+}
+
+#logout {
+  font-size: 60%;
+  vertical-align: top;
+}

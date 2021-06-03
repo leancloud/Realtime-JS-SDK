@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LeanCloud Realtime JavaScript SDK</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="user-scalable=no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>欢迎使用 LeanCloud 实时通信 SDK</h1>
+    <div class="item">
+      <p>
+        <a
+          target="_blank"
+          href="https://leancloud.cn/docs/realtime_v2.html"
+          >使用文档</a
+        >
+        /
+        <a
+          target="_blank"
+          href="https://leancloud.github.io/js-realtime-sdk/docs/"
+          >API 文档</a
+        >
+      </p>
+    </div>
+    <div class="item">
+      <label>
+        用户名
+        <input autofocus id="input-name" type="text" value="Guest" />
+      </label>
+      <label>
+        密码
+        <input autofocus id="input-password" type="password" value="Guest" />
+      </label>
+      <div id="login-btn" class="btn">登录</div>
+      <div id="signup-btn" class="btn">注册</div>
+    </div>
+    <div class="item">
+      <div id="print-wall" class="print-wall"></div>
+    </div>
+    <div class="item">
+      <label>输入信息：</label>
+      <input id="input-send" class="input-send" type="text" />
+      <div id="send-btn" class="btn">发送</div>
+      <div id="send-btn-as-file" class="btn">作为文件发送</div>
+    </div>
+
+    <!-- 引入 LeanCloud 存储 SDK -->
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@^4/dist/av-min.js"></script>
+    <!-- 引入 LeanCloud 实时通信 SDK -->
+    <script src="../../dist/im-browser.min.js"></script>
+    <!-- 引入 LeanCloud 实时通讯 TypedMessages -->
+    <script src="../../plugins/typed-messages/dist/typed-messages.min.js"></script>
+    <!-- Demo 逻辑文件 -->
+    <script src="test.js"></script>
+  </body>
+</html>

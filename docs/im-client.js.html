@@ -1,0 +1,1697 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Source: im-client.js | leancloud-realtime</title>
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+</head>
+<body>
+<div class="main-container">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label for="nav-trigger" class="navicon-button x">
+      <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+    <nav class="lnb" id="lnb">
+        <div class="nav-main">
+            <h1><a href="index.html" class="link">leancloud-realtime</a></h1>
+            <span class="version">
+            
+                v5.0.0-rc.6
+            
+            </span>
+        </div>
+        <div class="nav-search js-search">
+            <input type="text" placeholder="Search docs">
+            <ul class="searched-list"></ul>
+        </div>
+
+        
+
+        <div class="scroll">
+        <div class="nav-api hidden"><h3><a href="global.html">Global</a></h3></div><div class="nav-api hidden"><h3>Modules</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="module-leancloud-realtime.html">leancloud-realtime</a>
+                </header>
+                <div class="nav-item-sub hidden" id="module_leancloud-realtime_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.BinaryMessage">BinaryMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ChatRoom">ChatRoom</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.Conversation">Conversation</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ConversationMemberRole">ConversationMemberRole</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ConversationQuery">ConversationQuery</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.debug">debug</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.Message">Message</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.MessageParser">MessageParser</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.MessageQueryDirection">MessageQueryDirection</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.MessageStatus">MessageStatus</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.Realtime">Realtime</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.RecalledMessage">RecalledMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ServiceConversation">ServiceConversation</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.TemporaryConversation">TemporaryConversation</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.TextMessage">TextMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.TypedMessage">TypedMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~ErrorCode">ErrorCode</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~Event">Event</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~MessagePriority">MessagePriority</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.messageField">messageField</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.messageType">messageType</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.setAdapters">setAdapters</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~defineConversationProperty">defineConversationProperty</a></li></ul></div></div>
+            </li></ul></div><div class="nav-api hidden"><h3>Classes</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="BinaryMessage.html">BinaryMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="BinaryMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="BinaryMessage.html#buffer">buffer</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#from">from</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#id">id</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#status">status</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="BinaryMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ChatRoom.html">ChatRoom</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ChatRoom_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="ChatRoom.html#createdAt">createdAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#creator">creator</a></li><li class="sub-nav-item "><a href="ChatRoom.html#id">id</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#members">members</a></li><li class="sub-nav-item "><a href="ChatRoom.html#muted">muted</a></li><li class="sub-nav-item "><a href="ChatRoom.html#mutedMembers">mutedMembers</a></li><li class="sub-nav-item "><a href="ChatRoom.html#name">name</a></li><li class="sub-nav-item "><a href="ChatRoom.html#system">system</a></li><li class="sub-nav-item "><a href="ChatRoom.html#transient">transient</a></li><li class="sub-nav-item "><a href="ChatRoom.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="ChatRoom.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li><li class="sub-nav-item "><a href="ChatRoom.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="ChatRoom.html#add">add <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#blockMembers">blockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="ChatRoom.html#fetch">fetch <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#get">get</a></li><li class="sub-nav-item "><a href="ChatRoom.html#join">join <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#mute">mute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#muteMembers">muteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#queryBlockedMembers">queryBlockedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#queryMutedMembers">queryMutedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#quit">quit <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#remove">remove <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#save">save <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#set">set</a></li><li class="sub-nav-item "><a href="ChatRoom.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="ChatRoom.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="ChatRoom.html#unblockMembers">unblockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#unmute">unmute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#unmuteMembers">unmuteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#update">update <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="ChatRoom.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Conversation.html">Conversation</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Conversation_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Conversation.html#createdAt">createdAt</a></li><li class="sub-nav-item "><a href="Conversation.html#creator">creator</a></li><li class="sub-nav-item "><a href="Conversation.html#id">id</a></li><li class="sub-nav-item "><a href="Conversation.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="Conversation.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="Conversation.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="Conversation.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="Conversation.html#members">members</a></li><li class="sub-nav-item "><a href="Conversation.html#muted">muted</a></li><li class="sub-nav-item "><a href="Conversation.html#mutedMembers">mutedMembers</a></li><li class="sub-nav-item "><a href="Conversation.html#name">name</a></li><li class="sub-nav-item "><a href="Conversation.html#system">system</a></li><li class="sub-nav-item "><a href="Conversation.html#transient">transient</a></li><li class="sub-nav-item "><a href="Conversation.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="Conversation.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li><li class="sub-nav-item "><a href="Conversation.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Conversation.html#add">add <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#blockMembers">blockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="Conversation.html#fetch">fetch <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#get">get</a></li><li class="sub-nav-item "><a href="Conversation.html#getAllMemberInfo">getAllMemberInfo <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#getMemberInfo">getMemberInfo <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#join">join <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#mute">mute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#muteMembers">muteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#queryBlockedMembers">queryBlockedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#queryMutedMembers">queryMutedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#quit">quit <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#remove">remove <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#save">save <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#set">set</a></li><li class="sub-nav-item "><a href="Conversation.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="Conversation.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="Conversation.html#unblockMembers">unblockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#unmute">unmute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#unmuteMembers">unmuteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#update">update <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#updateMemberRole">updateMemberRole <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="Conversation.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ConversationMemberInfo.html">ConversationMemberInfo</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ConversationMemberInfo_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="ConversationMemberInfo.html#conversationId">conversationId</a></li><li class="sub-nav-item "><a href="ConversationMemberInfo.html#isOwner">isOwner</a></li><li class="sub-nav-item "><a href="ConversationMemberInfo.html#memberId">memberId</a></li><li class="sub-nav-item "><a href="ConversationMemberInfo.html#role">role</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ConversationQuery.html">ConversationQuery</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ConversationQuery_sub"><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="ConversationQuery.html#.and">and</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#.or">or</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#addAscending">addAscending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#addDescending">addDescending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#ascending">ascending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#compact">compact</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#containedIn">containedIn</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#contains">contains</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#containsAll">containsAll</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#containsMembers">containsMembers</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#descending">descending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#doesNotExist">doesNotExist</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#endsWith">endsWith</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#equalTo">equalTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#exists">exists</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#find">find <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ConversationQuery.html#first">first <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ConversationQuery.html#greaterThan">greaterThan</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#greaterThanOrEqualTo">greaterThanOrEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#lessThan">lessThan</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#lessThanOrEqualTo">lessThanOrEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#limit">limit</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#matches">matches</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#notContainsIn">notContainsIn</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#notEqualTo">notEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#sizeEqualTo">sizeEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#skip">skip</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#startsWith">startsWith</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#withLastMessagesRefreshed">withLastMessagesRefreshed</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#withMembers">withMembers</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="IMClient.html">IMClient</a>
+                </header>
+                <div class="nav-item-sub hidden" id="IMClient_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="IMClient.html#id">id</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="IMClient.html#close">close <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#createChatRoom">createChatRoom <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#createConversation">createConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#createTemporaryConversation">createTemporaryConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#emit">emit</a></li><li class="sub-nav-item "><a href="IMClient.html#getChatRoomQuery">getChatRoomQuery</a></li><li class="sub-nav-item "><a href="IMClient.html#getConversation">getConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#getConversations">getConversations <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#getQuery">getQuery</a></li><li class="sub-nav-item "><a href="IMClient.html#getServiceConversationQuery">getServiceConversationQuery</a></li><li class="sub-nav-item "><a href="IMClient.html#off">off</a></li><li class="sub-nav-item "><a href="IMClient.html#on">on</a></li><li class="sub-nav-item "><a href="IMClient.html#once">once</a></li><li class="sub-nav-item "><a href="IMClient.html#parseConversation">parseConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#parseMessage">parseMessage <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#ping">ping <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="IMClient.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:CLOSE">CLOSE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:CONFLICT">CONFLICT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:CONVERSATION_INFO_UPDATED">CONVERSATION_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:DISCONNECT">DISCONNECT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:OFFLINE">OFFLINE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:ONLINE">ONLINE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:RECONNECT">RECONNECT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:RECONNECT_ERROR">RECONNECT_ERROR</a></li><li class="sub-nav-item "><a href="IMClient.html#event:RETRY">RETRY</a></li><li class="sub-nav-item "><a href="IMClient.html#event:SCHEDULE">SCHEDULE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:UNMUTED">UNMUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:UNREAD_MESSAGES_COUNT_UPDATE">UNREAD_MESSAGES_COUNT_UPDATE</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Message.html">Message</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Message_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Message.html#cid">cid</a></li><li class="sub-nav-item "><a href="Message.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="Message.html#from">from</a></li><li class="sub-nav-item "><a href="Message.html#id">id</a></li><li class="sub-nav-item "><a href="Message.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="Message.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="Message.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="Message.html#status">status</a></li><li class="sub-nav-item "><a href="Message.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="Message.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Message.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="Message.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="Message.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="Message.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="Message.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="MessageParser.html">MessageParser</a>
+                </header>
+                <div class="nav-item-sub hidden" id="MessageParser_sub"><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="MessageParser.html#parse">parse</a></li><li class="sub-nav-item "><a href="MessageParser.html#register">register</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Realtime.html">Realtime</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Realtime_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Realtime.html#register">register</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Realtime.html#createIMClient">createIMClient <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Realtime.html#emit">emit</a></li><li class="sub-nav-item "><a href="Realtime.html#off">off</a></li><li class="sub-nav-item "><a href="Realtime.html#on">on</a></li><li class="sub-nav-item "><a href="Realtime.html#once">once</a></li><li class="sub-nav-item "><a href="Realtime.html#pause">pause</a></li><li class="sub-nav-item "><a href="Realtime.html#resume">resume</a></li><li class="sub-nav-item "><a href="Realtime.html#retry">retry</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="Realtime.html#event:DISCONNECT">DISCONNECT</a></li><li class="sub-nav-item "><a href="Realtime.html#event:OFFLINE">OFFLINE</a></li><li class="sub-nav-item "><a href="Realtime.html#event:ONLINE">ONLINE</a></li><li class="sub-nav-item "><a href="Realtime.html#event:RECONNECT">RECONNECT</a></li><li class="sub-nav-item "><a href="Realtime.html#event:RETRY">RETRY</a></li><li class="sub-nav-item "><a href="Realtime.html#event:SCHEDULE">SCHEDULE</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="RecalledMessage.html">RecalledMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="RecalledMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="RecalledMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#from">from</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#id">id</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#status">status</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#text">text</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#type">type</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="RecalledMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ServiceConversation.html">ServiceConversation</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ServiceConversation_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="ServiceConversation.html#createdAt">createdAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#creator">creator</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#id">id</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#members">members</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#muted">muted</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#mutedMembers">mutedMembers</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#name">name</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#system">system</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#transient">transient</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="ServiceConversation.html#add">add <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#blockMembers">blockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#fetch">fetch <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#get">get</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#join">join <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#mute">mute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#muteMembers">muteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#queryBlockedMembers">queryBlockedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#queryMutedMembers">queryMutedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#quit">quit <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#remove">remove <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#save">save <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#set">set</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#subscribe">subscribe <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unblockMembers">unblockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unmute">unmute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unmuteMembers">unmuteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unsubscribe">unsubscribe <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#update">update <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="ServiceConversation.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="TemporaryConversation.html">TemporaryConversation</a>
+                </header>
+                <div class="nav-item-sub hidden" id="TemporaryConversation_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="TemporaryConversation.html#expired">expired</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#expiredAt">expiredAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#id">id</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#members">members</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="TemporaryConversation.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#emit">emit</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#off">off</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#on">on</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#once">once</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#update">update <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="TemporaryConversation.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="TextMessage.html">TextMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="TextMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="TextMessage.html#.TYPE">TYPE</a></li><li class="sub-nav-item "><a href="TextMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="TextMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="TextMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="TextMessage.html#from">from</a></li><li class="sub-nav-item "><a href="TextMessage.html#id">id</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="TextMessage.html#status">status</a></li><li class="sub-nav-item "><a href="TextMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="TextMessage.html#text">text</a></li><li class="sub-nav-item "><a href="TextMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="TextMessage.html#type">type</a></li><li class="sub-nav-item "><a href="TextMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="TextMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="TextMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="TextMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="TextMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="TextMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="TextMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="TextMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="TextMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="TypedMessage.html">TypedMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="TypedMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="TypedMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="TypedMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="TypedMessage.html#from">from</a></li><li class="sub-nav-item "><a href="TypedMessage.html#id">id</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#status">status</a></li><li class="sub-nav-item "><a href="TypedMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="TypedMessage.html#text">text</a></li><li class="sub-nav-item "><a href="TypedMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="TypedMessage.html#type">type</a></li><li class="sub-nav-item "><a href="TypedMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="TypedMessage.html#.parse">parse</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="TypedMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="TypedMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li></ul></div><div class="nav-api hidden"><h3>Interfaces</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="AVMessage.html">AVMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="AVMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="AVMessage.html#.sendOptions">sendOptions</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="AVMessage.html#.parse">parse</a></li><li class="sub-nav-item "><a href="AVMessage.html#.validate">validate</a></li><li class="sub-nav-item "><a href="AVMessage.html#getPayload">getPayload</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Plugin.html">Plugin</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Plugin_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Plugin.html#.afterMessageParse">afterMessageParse</a></li><li class="sub-nav-item "><a href="Plugin.html#.beforeMessageDispatch">beforeMessageDispatch</a></li><li class="sub-nav-item "><a href="Plugin.html#.beforeMessageParse">beforeMessageParse</a></li><li class="sub-nav-item "><a href="Plugin.html#.messageClasses">messageClasses</a></li><li class="sub-nav-item "><a href="Plugin.html#.name">name</a></li><li class="sub-nav-item "><a href="Plugin.html#.onConversationCreate">onConversationCreate</a></li><li class="sub-nav-item "><a href="Plugin.html#.onIMClientCreate">onIMClientCreate</a></li><li class="sub-nav-item "><a href="Plugin.html#.onRealtimeCreate">onRealtimeCreate</a></li></ul></div></div>
+            </li></ul></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Docs</a> »</li>
+            <li>Source: im-client.js</li>
+        </ul>
+        <hr>
+        
+
+
+
+    
+<article>
+    <pre class="prettyprint source linenums"><code>import EventEmitter from 'eventemitter3';
+import { decode as decodeBase64 } from 'base64-arraybuffer';
+import remove from 'lodash/remove';
+import values from 'lodash/values';
+import d from 'debug';
+import {
+  Conversation,
+  ChatRoom,
+  ServiceConversation,
+  TemporaryConversation,
+} from './conversations';
+import ConversationBase from './conversations/conversation-base';
+import ConversationQuery from './conversation-query';
+import {
+  GenericCommand,
+  SessionCommand,
+  ConvCommand,
+  AckCommand,
+  JsonObjectMessage,
+  ReadCommand,
+  ReadTuple,
+  CommandType,
+  OpType,
+} from '../proto/message';
+import * as Event from './events/im';
+import { ErrorCode, createError } from './error';
+import {
+  Expirable,
+  Cache,
+  keyRemap,
+  trim,
+  internal,
+  throttle,
+  encode,
+  decode,
+  decodeDate,
+  getTime,
+} from './utils';
+import { applyDecorators, applyDispatcher } from './plugin';
+import SessionManager from './session-manager';
+import runSignatureFactory from './signature-factory-runner';
+import { MessageStatus } from './messages/message';
+import { version as VERSION } from '../package.json';
+
+const debug = d('LC:IMClient');
+
+const {
+  INVITED,
+  KICKED,
+  MEMBERS_JOINED,
+  MEMBERS_LEFT,
+  MEMBER_INFO_UPDATED,
+  BLOCKED,
+  UNBLOCKED,
+  MEMBERS_BLOCKED,
+  MEMBERS_UNBLOCKED,
+  MUTED,
+  UNMUTED,
+  MEMBERS_MUTED,
+  MEMBERS_UNMUTED,
+  MESSAGE,
+  UNREAD_MESSAGES_COUNT_UPDATE,
+  CLOSE,
+  CONFLICT,
+  UNHANDLED_MESSAGE,
+  CONVERSATION_INFO_UPDATED,
+  MESSAGE_RECALL,
+  MESSAGE_UPDATE,
+  INFO_UPDATED,
+} = Event;
+
+const isTemporaryConversatrionId = id => /^_tmp:/.test(id);
+
+/**
+ * 1 patch-msg
+ * 1 temp-conv-msg
+ * 0 auto-bind-deviceid-and-installation
+ * 1 transient-msg-ack
+ * 1 keep-notification
+ * 1 partial-failed-msg
+ * 0 group-chat-rcp
+ * 1 omit-peer-id
+ * @ignore
+ */
+const configBitmap = 0b10111011;
+
+export default class IMClient extends EventEmitter {
+  /**
+   * 无法直接实例化，请使用 {@link Realtime#createIMClient} 创建新的 IMClient。
+   *
+   * @extends EventEmitter
+   */
+  constructor(id, options = {}, props) {
+    if (!(id === undefined || typeof id === 'string')) {
+      throw new TypeError(`Client id [${id}] is not a String`);
+    }
+    super();
+    Object.assign(
+      this,
+      {
+        /**
+         * @var id {String} 客户端 id
+         * @memberof IMClient#
+         */
+        id,
+        options,
+      },
+      props
+    );
+
+    if (!this._messageParser) {
+      throw new Error('IMClient must be initialized with a MessageParser');
+    }
+    this._conversationCache = new Cache(`client:${this.id}`);
+    this._ackMessageBuffer = {};
+    internal(this).lastPatchTime = Date.now();
+    internal(this).lastNotificationTime = undefined;
+    internal(this)._eventemitter = new EventEmitter();
+    if (debug.enabled) {
+      values(Event).forEach(event =>
+        this.on(event, (...payload) =>
+          this._debug(`${event} event emitted. %o`, payload)
+        )
+      );
+    }
+    // onIMClientCreate hook
+    applyDecorators(this._plugins.onIMClientCreate, this);
+  }
+
+  _debug(...params) {
+    debug(...params, `[${this.id}]`);
+  }
+
+  /**
+   * @override
+   * @private
+   */
+  async _dispatchCommand(command) {
+    this._debug(trim(command), 'received');
+    if (command.serverTs &amp;&amp; command.notificationType === 1) {
+      internal(this).lastNotificationTime = getTime(
+        decodeDate(command.serverTs)
+      );
+    }
+    switch (command.cmd) {
+      case CommandType.conv:
+        return this._dispatchConvMessage(command);
+      case CommandType.direct:
+        return this._dispatchDirectMessage(command);
+      case CommandType.session:
+        return this._dispatchSessionMessage(command);
+      case CommandType.unread:
+        return this._dispatchUnreadMessage(command);
+      case CommandType.rcp:
+        return this._dispatchRcpMessage(command);
+      case CommandType.patch:
+        return this._dispatchPatchMessage(command);
+      default:
+        return this.emit(UNHANDLED_MESSAGE, command);
+    }
+  }
+
+  async _dispatchSessionMessage(message) {
+    const {
+      sessionMessage: { code, reason },
+    } = message;
+    switch (message.op) {
+      case OpType.closed: {
+        internal(this)._eventemitter.emit('close');
+        if (code === ErrorCode.SESSION_CONFLICT) {
+          /**
+           * 用户在其他客户端登录，当前客户端被服务端强行下线。详见文档「单点登录」章节。
+           * @event IMClient#CONFLICT
+           * @param {Object} payload
+           * @param {string} payload.reason 原因
+           */
+          return this.emit(CONFLICT, {
+            reason,
+          });
+        }
+        /**
+         * 当前客户端被服务端强行下线
+         * @event IMClient#CLOSE
+         * @param {Object} payload
+         * @param {Number} payload.code 错误码
+         * @param {String} payload.reason 原因
+         */
+        return this.emit(CLOSE, {
+          code,
+          reason,
+        });
+      }
+      default:
+        this.emit(UNHANDLED_MESSAGE, message);
+        throw new Error('Unrecognized session command');
+    }
+  }
+
+  _dispatchUnreadMessage({ unreadMessage: { convs, notifTime } }) {
+    internal(this).lastUnreadNotifTime = notifTime;
+    // ensure all converstions are cached
+    return this.getConversations(convs.map(conv => conv.cid))
+      .then(() =>
+        // update conversations data
+        Promise.all(
+          convs.map(
+            ({
+              cid,
+              unread,
+              mid,
+              timestamp: ts,
+              from,
+              data,
+              binaryMsg,
+              patchTimestamp,
+              mentioned,
+            }) => {
+              const conversation = this._conversationCache.get(cid);
+              // deleted conversation
+              if (!conversation) return null;
+              let timestamp;
+              if (ts) {
+                timestamp = decodeDate(ts);
+                conversation.lastMessageAt = timestamp; // eslint-disable-line no-param-reassign
+              }
+              return (mid
+                ? this._messageParser.parse(binaryMsg || data).then(message => {
+                    const messageProps = {
+                      id: mid,
+                      cid,
+                      timestamp,
+                      updatedAt: patchTimestamp,
+                      from,
+                    };
+                    Object.assign(message, messageProps);
+                    conversation.lastMessage = message; // eslint-disable-line no-param-reassign
+                  })
+                : Promise.resolve()
+              ).then(() => {
+                conversation._setUnreadMessagesMentioned(mentioned);
+                const countNotUpdated =
+                  unread === internal(conversation).unreadMessagesCount;
+                if (countNotUpdated) return null; // to be filtered
+                // manipulate internal property directly to skip unreadmessagescountupdate event
+                internal(conversation).unreadMessagesCount = unread;
+                return conversation;
+              });
+              // filter conversations without unread count update
+            }
+          )
+        ).then(conversations =>
+          conversations.filter(conversation => conversation)
+        )
+      )
+      .then(conversations => {
+        if (conversations.length) {
+          /**
+           * 未读消息数目更新
+           * @event IMClient#UNREAD_MESSAGES_COUNT_UPDATE
+           * @since 3.4.0
+           * @param {Conversation[]} conversations 未读消息数目有更新的对话列表
+           */
+          this.emit(UNREAD_MESSAGES_COUNT_UPDATE, conversations);
+        }
+      });
+  }
+
+  async _dispatchRcpMessage(message) {
+    const {
+      rcpMessage,
+      rcpMessage: { read },
+    } = message;
+    const conversationId = rcpMessage.cid;
+    const messageId = rcpMessage.id;
+    const timestamp = decodeDate(rcpMessage.t);
+    const conversation = this._conversationCache.get(conversationId);
+    // conversation not cached means the client does not send the message
+    // during this session
+    if (!conversation) return;
+    conversation._handleReceipt({ messageId, timestamp, read });
+  }
+
+  _dispatchPatchMessage({ patchMessage: { patches } }) {
+    // ensure all converstions are cached
+    return this.getConversations(patches.map(patch => patch.cid)).then(() =>
+      Promise.all(
+        patches.map(
+          ({
+            cid,
+            mid,
+            timestamp,
+            recall,
+            data,
+            patchTimestamp,
+            from,
+            binaryMsg,
+            mentionAll,
+            mentionPids,
+            patchCode,
+            patchReason,
+          }) => {
+            const conversation = this._conversationCache.get(cid);
+            // deleted conversation
+            if (!conversation) return null;
+            return this._messageParser
+              .parse(binaryMsg || data)
+              .then(message => {
+                const patchTime = getTime(decodeDate(patchTimestamp));
+                const messageProps = {
+                  id: mid,
+                  cid,
+                  timestamp,
+                  updatedAt: patchTime,
+                  from,
+                  mentionList: mentionPids,
+                  mentionedAll: mentionAll,
+                };
+                Object.assign(message, messageProps);
+                message._setStatus(MessageStatus.SENT);
+                message._updateMentioned(this.id);
+                if (internal(this).lastPatchTime &lt; patchTime) {
+                  internal(this).lastPatchTime = patchTime;
+                }
+                // update conversation lastMessage
+                if (
+                  conversation.lastMessage &amp;&amp;
+                  conversation.lastMessage.id === mid
+                ) {
+                  conversation.lastMessage = message; // eslint-disable-line no-param-reassign
+                }
+                let reason;
+                if (patchCode) {
+                  reason = {
+                    code: patchCode.toNumber(),
+                    detail: patchReason,
+                  };
+                }
+                if (recall) {
+                  /**
+                   * 消息被撤回
+                   * @event IMClient#MESSAGE_RECALL
+                   * @param {AVMessage} message 被撤回的消息
+                   * @param {ConversationBase} conversation 消息所在的会话
+                   * @param {PatchReason} [reason] 撤回的原因，不存在代表是发送者主动撤回
+                   */
+                  this.emit(MESSAGE_RECALL, message, conversation, reason);
+                  /**
+                   * 消息被撤回
+                   * @event ConversationBase#MESSAGE_RECALL
+                   * @param {AVMessage} message 被撤回的消息
+                   * @param {PatchReason} [reason] 撤回的原因，不存在代表是发送者主动撤回
+                   */
+                  conversation.emit(MESSAGE_RECALL, message, reason);
+                } else {
+                  /**
+                   * 消息被修改
+                   * @event IMClient#MESSAGE_UPDATE
+                   * @param {AVMessage} message 被修改的消息
+                   * @param {ConversationBase} conversation 消息所在的会话
+                   * @param {PatchReason} [reason] 修改的原因，不存在代表是发送者主动修改
+                   */
+                  this.emit(MESSAGE_UPDATE, message, conversation, reason);
+                  /**
+                   * 消息被修改
+                   * @event ConversationBase#MESSAGE_UPDATE
+                   * @param {AVMessage} message 被修改的消息
+                   * @param {PatchReason} [reason] 修改的原因，不存在代表是发送者主动修改
+                   */
+                  conversation.emit(MESSAGE_UPDATE, message, reason);
+                }
+              });
+          }
+        )
+      )
+    );
+  }
+
+  async _dispatchConvMessage(message) {
+    const {
+      convMessage,
+      convMessage: { initBy, m, info, attr },
+    } = message;
+    const conversation = await this.getConversation(convMessage.cid);
+    switch (message.op) {
+      case OpType.joined: {
+        conversation._addMembers([this.id]);
+        const payload = {
+          invitedBy: initBy,
+        };
+        /**
+         * 当前用户被添加至某个对话
+         * @event IMClient#INVITED
+         * @param {Object} payload
+         * @param {String} payload.invitedBy 邀请者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(INVITED, payload, conversation);
+        /**
+         * 当前用户被添加至当前对话
+         * @event ConversationBase#INVITED
+         * @param {Object} payload
+         * @param {String} payload.invitedBy 该移除操作的发起者 id
+         */
+        conversation.emit(INVITED, payload);
+        return;
+      }
+      case OpType.left: {
+        conversation._removeMembers([this.id]);
+        const payload = {
+          kickedBy: initBy,
+        };
+        /**
+         * 当前用户被从某个对话中移除
+         * @event IMClient#KICKED
+         * @param {Object} payload
+         * @param {String} payload.kickedBy 该移除操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(KICKED, payload, conversation);
+        /**
+         * 当前用户被从当前对话中移除
+         * @event ConversationBase#KICKED
+         * @param {Object} payload
+         * @param {String} payload.kickedBy 该移除操作的发起者 id
+         */
+        conversation.emit(KICKED, payload);
+        return;
+      }
+      case OpType.members_joined: {
+        conversation._addMembers(m);
+        const payload = {
+          invitedBy: initBy,
+          members: m,
+        };
+        /**
+         * 有用户被添加至某个对话
+         * @event IMClient#MEMBERS_JOINED
+         * @param {Object} payload
+         * @param {String[]} payload.members 被添加的用户 id 列表
+         * @param {String} payload.invitedBy 邀请者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(MEMBERS_JOINED, payload, conversation);
+        /**
+         * 有成员被添加至当前对话
+         * @event ConversationBase#MEMBERS_JOINED
+         * @param {Object} payload
+         * @param {String[]} payload.members 被添加的成员 id 列表
+         * @param {String} payload.invitedBy 邀请者 id
+         */
+        conversation.emit(MEMBERS_JOINED, payload);
+        return;
+      }
+      case OpType.members_left: {
+        conversation._removeMembers(m);
+        const payload = {
+          kickedBy: initBy,
+          members: m,
+        };
+        /**
+         * 有成员被从某个对话中移除
+         * @event IMClient#MEMBERS_LEFT
+         * @param {Object} payload
+         * @param {String[]} payload.members 被移除的成员 id 列表
+         * @param {String} payload.kickedBy 该移除操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(MEMBERS_LEFT, payload, conversation);
+        /**
+         * 有成员被从当前对话中移除
+         * @event ConversationBase#MEMBERS_LEFT
+         * @param {Object} payload
+         * @param {String[]} payload.members 被移除的成员 id 列表
+         * @param {String} payload.kickedBy 该移除操作的发起者 id
+         */
+        conversation.emit(MEMBERS_LEFT, payload);
+        return;
+      }
+      case OpType.members_blocked: {
+        const payload = {
+          blockedBy: initBy,
+          members: m,
+        };
+        /**
+         * 有成员被加入某个对话的黑名单
+         * @event IMClient#MEMBERS_BLOCKED
+         * @param {Object} payload
+         * @param {String[]} payload.members 成员 id 列表
+         * @param {String} payload.blockedBy 该操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(MEMBERS_BLOCKED, payload, conversation);
+        /**
+         * 有成员被加入当前对话的黑名单
+         * @event ConversationBase#MEMBERS_BLOCKED
+         * @param {Object} payload
+         * @param {String[]} payload.members 成员 id 列表
+         * @param {String} payload.blockedBy 该操作的发起者 id
+         */
+        conversation.emit(MEMBERS_BLOCKED, payload);
+        return;
+      }
+      case OpType.members_unblocked: {
+        const payload = {
+          unblockedBy: initBy,
+          members: m,
+        };
+        /**
+         * 有成员被移出某个对话的黑名单
+         * @event IMClient#MEMBERS_UNBLOCKED
+         * @param {Object} payload
+         * @param {String[]} payload.members 成员 id 列表
+         * @param {String} payload.unblockedBy 该操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(MEMBERS_UNBLOCKED, payload, conversation);
+        /**
+         * 有成员被移出当前对话的黑名单
+         * @event ConversationBase#MEMBERS_UNBLOCKED
+         * @param {Object} payload
+         * @param {String[]} payload.members 成员 id 列表
+         * @param {String} payload.unblockedBy 该操作的发起者 id
+         */
+        conversation.emit(MEMBERS_UNBLOCKED, payload);
+        return;
+      }
+      case OpType.blocked: {
+        const payload = {
+          blockedBy: initBy,
+        };
+        /**
+         * 当前用户被加入某个对话的黑名单
+         * @event IMClient#BLOCKED
+         * @param {Object} payload
+         * @param {String} payload.blockedBy 该操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(BLOCKED, payload, conversation);
+        /**
+         * 当前用户被加入当前对话的黑名单
+         * @event ConversationBase#BLOCKED
+         * @param {Object} payload
+         * @param {String} payload.blockedBy 该操作的发起者 id
+         */
+        conversation.emit(BLOCKED, payload);
+        return;
+      }
+      case OpType.unblocked: {
+        const payload = {
+          unblockedBy: initBy,
+        };
+        /**
+         * 当前用户被移出某个对话的黑名单
+         * @event IMClient#UNBLOCKED
+         * @param {Object} payload
+         * @param {String} payload.unblockedBy 该操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(UNBLOCKED, payload, conversation);
+        /**
+         * 当前用户被移出当前对话的黑名单
+         * @event ConversationBase#UNBLOCKED
+         * @param {Object} payload
+         * @param {String} payload.unblockedBy 该操作的发起者 id
+         */
+        conversation.emit(UNBLOCKED, payload);
+        return;
+      }
+      case OpType.members_shutuped: {
+        const payload = {
+          mutedBy: initBy,
+          members: m,
+        };
+        /**
+         * 有成员在某个对话中被禁言
+         * @event IMClient#MEMBERS_MUTED
+         * @param {Object} payload
+         * @param {String[]} payload.members 成员 id 列表
+         * @param {String} payload.mutedBy 该操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(MEMBERS_MUTED, payload, conversation);
+        /**
+         * 有成员在当前对话中被禁言
+         * @event ConversationBase#MEMBERS_MUTED
+         * @param {Object} payload
+         * @param {String[]} payload.members 成员 id 列表
+         * @param {String} payload.mutedBy 该操作的发起者 id
+         */
+        conversation.emit(MEMBERS_MUTED, payload);
+        return;
+      }
+      case OpType.members_unshutuped: {
+        const payload = {
+          unmutedBy: initBy,
+          members: m,
+        };
+        /**
+         * 有成员在某个对话中被解除禁言
+         * @event IMClient#MEMBERS_UNMUTED
+         * @param {Object} payload
+         * @param {String[]} payload.members 成员 id 列表
+         * @param {String} payload.unmutedBy 该操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(MEMBERS_UNMUTED, payload, conversation);
+        /**
+         * 有成员在当前对话中被解除禁言
+         * @event ConversationBase#MEMBERS_UNMUTED
+         * @param {Object} payload
+         * @param {String[]} payload.members 成员 id 列表
+         * @param {String} payload.unmutedBy 该操作的发起者 id
+         */
+        conversation.emit(MEMBERS_UNMUTED, payload);
+        return;
+      }
+      case OpType.shutuped: {
+        const payload = {
+          mutedBy: initBy,
+        };
+        /**
+         * 有成员在某个对话中被禁言
+         * @event IMClient#MUTED
+         * @param {Object} payload
+         * @param {String} payload.mutedBy 该操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(MUTED, payload, conversation);
+        /**
+         * 有成员在当前对话中被禁言
+         * @event ConversationBase#MUTED
+         * @param {Object} payload
+         * @param {String} payload.mutedBy 该操作的发起者 id
+         */
+        conversation.emit(MUTED, payload);
+        return;
+      }
+      case OpType.unshutuped: {
+        const payload = {
+          unmutedBy: initBy,
+        };
+        /**
+         * 有成员在某个对话中被解除禁言
+         * @event IMClient#UNMUTED
+         * @param {Object} payload
+         * @param {String} payload.unmutedBy 该操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(UNMUTED, payload, conversation);
+        /**
+         * 有成员在当前对话中被解除禁言
+         * @event ConversationBase#UNMUTED
+         * @param {Object} payload
+         * @param {String} payload.unmutedBy 该操作的发起者 id
+         */
+        conversation.emit(UNMUTED, payload);
+        return;
+      }
+      case OpType.member_info_changed: {
+        const { pid, role } = info;
+        const { memberInfoMap } = internal(conversation);
+        // 如果不存在缓存，且不是 role 的更新，则不通知
+        if (!memberInfoMap &amp;&amp; !role) return;
+        const memberInfo = await conversation.getMemberInfo(pid);
+        internal(memberInfo).role = role;
+        const payload = {
+          member: pid,
+          memberInfo,
+          updatedBy: initBy,
+        };
+        /**
+         * 有成员的对话信息被更新
+         * @event IMClient#MEMBER_INFO_UPDATED
+         * @param {Object} payload
+         * @param {String} payload.member 被更新对话信息的成员 id
+         * @param {ConversationMumberInfo} payload.memberInfo 被更新的成员对话信息
+         * @param {String} payload.updatedBy 该操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(MEMBER_INFO_UPDATED, payload, conversation);
+        /**
+         * 有成员的对话信息被更新
+         * @event ConversationBase#MEMBER_INFO_UPDATED
+         * @param {Object} payload
+         * @param {String} payload.member 被更新对话信息的成员 id
+         * @param {ConversationMumberInfo} payload.memberInfo 被更新的成员对话信息
+         * @param {String} payload.updatedBy 该操作的发起者 id
+         */
+        conversation.emit(MEMBER_INFO_UPDATED, payload);
+        return;
+      }
+      case OpType.updated: {
+        const attributes = decode(JSON.parse(attr.data));
+        conversation._updateServerAttributes(attributes);
+        const payload = {
+          attributes,
+          updatedBy: initBy,
+        };
+        /**
+         * 该对话信息被更新
+         * @event IMClient#CONVERSATION_INFO_UPDATED
+         * @param {Object} payload
+         * @param {Object} payload.attributes 被更新的属性
+         * @param {String} payload.updatedBy 该操作的发起者 id
+         * @param {ConversationBase} conversation
+         */
+        this.emit(CONVERSATION_INFO_UPDATED, payload, conversation);
+        /**
+         * 有对话信息被更新
+         * @event ConversationBase#INFO_UPDATED
+         * @param {Object} payload
+         * @param {Object} payload.attributes 被更新的属性
+         * @param {String} payload.updatedBy 该操作的发起者 id
+         */
+        conversation.emit(INFO_UPDATED, payload);
+        return;
+      }
+      default:
+        this.emit(UNHANDLED_MESSAGE, message);
+        throw new Error('Unrecognized conversation command');
+    }
+  }
+
+  _dispatchDirectMessage(originalMessage) {
+    const {
+      directMessage,
+      directMessage: {
+        id,
+        cid,
+        fromPeerId,
+        timestamp,
+        transient,
+        patchTimestamp,
+        mentionPids,
+        mentionAll,
+        binaryMsg,
+        msg,
+      },
+    } = originalMessage;
+    const content = binaryMsg ? binaryMsg.toArrayBuffer() : msg;
+    return Promise.all([
+      this.getConversation(directMessage.cid),
+      this._messageParser.parse(content),
+    ]).then(([conversation, message]) => {
+      // deleted conversation
+      if (!conversation) return undefined;
+      const messageProps = {
+        id,
+        cid,
+        timestamp,
+        updatedAt: patchTimestamp,
+        from: fromPeerId,
+        mentionList: mentionPids,
+        mentionedAll: mentionAll,
+      };
+      Object.assign(message, messageProps);
+      message._updateMentioned(this.id);
+      message._setStatus(MessageStatus.SENT);
+      // filter outgoing message sent from another device
+      if (message.from !== this.id) {
+        if (!(transient || conversation.transient)) {
+          this._sendAck(message);
+        }
+      }
+      return this._dispatchParsedMessage(message, conversation);
+    });
+  }
+
+  _dispatchParsedMessage(message, conversation) {
+    // beforeMessageDispatch hook
+    return applyDispatcher(this._plugins.beforeMessageDispatch, [
+      message,
+      conversation,
+    ]).then(shouldDispatch => {
+      if (shouldDispatch === false) return;
+      conversation.lastMessage = message; // eslint-disable-line no-param-reassign
+      conversation.lastMessageAt = message.timestamp; // eslint-disable-line no-param-reassign
+      // filter outgoing message sent from another device
+      if (message.from !== this.id) {
+        conversation.unreadMessagesCount += 1; // eslint-disable-line no-param-reassign
+        if (message.mentioned) conversation._setUnreadMessagesMentioned(true);
+      }
+      /**
+       * 当前用户收到消息
+       * @event IMClient#MESSAGE
+       * @param {Message} message
+       * @param {ConversationBase} conversation 收到消息的对话
+       */
+      this.emit(MESSAGE, message, conversation);
+      /**
+       * 当前对话收到消息
+       * @event ConversationBase#MESSAGE
+       * @param {Message} message
+       */
+      conversation.emit(MESSAGE, message);
+    });
+  }
+
+  _sendAck(message) {
+    this._debug('send ack for %O', message);
+    const { cid } = message;
+    if (!cid) {
+      throw new Error('missing cid');
+    }
+    if (!this._ackMessageBuffer[cid]) {
+      this._ackMessageBuffer[cid] = [];
+    }
+    this._ackMessageBuffer[cid].push(message);
+    return this._doSendAck();
+  }
+
+  // jsdoc-ignore-start
+  @throttle(1000)
+  // jsdoc-ignore-end
+  _doSendAck() {
+    // if not connected, just skip everything
+    if (!this._connection.is('connected')) return;
+    this._debug('do send ack %O', this._ackMessageBuffer);
+    Promise.all(
+      Object.keys(this._ackMessageBuffer).map(cid => {
+        const convAckMessages = this._ackMessageBuffer[cid];
+        const timestamps = convAckMessages.map(message => message.timestamp);
+        const command = new GenericCommand({
+          cmd: 'ack',
+          ackMessage: new AckCommand({
+            cid,
+            fromts: Math.min.apply(null, timestamps),
+            tots: Math.max.apply(null, timestamps),
+          }),
+        });
+        delete this._ackMessageBuffer[cid];
+        return this._send(command, false).catch(error => {
+          this._debug('send ack failed: %O', error);
+          this._ackMessageBuffer[cid] = convAckMessages;
+        });
+      })
+    );
+  }
+
+  _omitPeerId(value) {
+    internal(this).peerIdOmittable = value;
+  }
+
+  _send(cmd, ...args) {
+    const command = cmd;
+    if (!internal(this).peerIdOmittable &amp;&amp; this.id) {
+      command.peerId = this.id;
+    }
+    return this._connection.send(command, ...args);
+  }
+
+  async _open(appId, tag, deviceId, isReconnect = false) {
+    this._debug('open session');
+    const {
+      lastUnreadNotifTime,
+      lastPatchTime,
+      lastNotificationTime,
+    } = internal(this);
+    const command = new GenericCommand({
+      cmd: 'session',
+      op: 'open',
+      appId,
+      peerId: this.id,
+      sessionMessage: new SessionCommand({
+        ua: `js/${VERSION}`,
+        r: isReconnect,
+        lastUnreadNotifTime,
+        lastPatchTime,
+        configBitmap,
+      }),
+    });
+    if (!isReconnect) {
+      Object.assign(
+        command.sessionMessage,
+        trim({
+          tag,
+          deviceId,
+        })
+      );
+      if (this.options.signatureFactory) {
+        const signatureResult = await runSignatureFactory(
+          this.options.signatureFactory,
+          [this._identity]
+        );
+        Object.assign(
+          command.sessionMessage,
+          keyRemap(
+            {
+              signature: 's',
+              timestamp: 't',
+              nonce: 'n',
+            },
+            signatureResult
+          )
+        );
+      }
+    } else {
+      const sessionToken = await this._sessionManager.getSessionToken({
+        autoRefresh: false,
+      });
+      if (sessionToken &amp;&amp; sessionToken !== Expirable.EXPIRED) {
+        Object.assign(command.sessionMessage, {
+          st: sessionToken,
+        });
+      }
+    }
+    let resCommand;
+    try {
+      resCommand = await this._send(command);
+    } catch (error) {
+      if (error.code === ErrorCode.SESSION_TOKEN_EXPIRED) {
+        if (!this._sessionManager) {
+          // let it fail if sessoinToken not cached but command rejected as token expired
+          // to prevent session openning flood
+          throw new Error('Unexpected session expiration');
+        }
+        debug('Session token expired, reopening');
+        this._sessionManager.revoke();
+        return this._open(appId, tag, deviceId, isReconnect);
+      }
+      throw error;
+    }
+    const {
+      peerId,
+      sessionMessage,
+      sessionMessage: { st: token, stTtl: tokenTTL, code },
+      serverTs,
+    } = resCommand;
+    if (code) {
+      throw createError(sessionMessage);
+    }
+    if (peerId) {
+      this.id = peerId;
+      if (!this._identity) this._identity = peerId;
+      if (token) {
+        this._sessionManager =
+          this._sessionManager || this._createSessionManager();
+        this._sessionManager.setSessionToken(token, tokenTTL);
+      }
+      const serverTime = getTime(decodeDate(serverTs));
+      if (serverTs) {
+        internal(this).lastPatchTime = serverTime;
+      }
+      if (lastNotificationTime) {
+        // Do not await for it as this is failable
+        this._syncNotifications(lastNotificationTime).catch(error =>
+          console.warn('Syncing notifications failed:', error)
+        );
+      } else {
+        // Set timestamp to now for next reconnection
+        internal(this).lastNotificationTime = serverTime;
+      }
+    } else {
+      console.warn('Unexpected session opened without peerId.');
+    }
+    return undefined;
+  }
+
+  async _syncNotifications(timestamp) {
+    const { hasMore, notifications } = await this._fetchNotifications(
+      timestamp
+    );
+    notifications.forEach(notification => {
+      const { cmd, op, serverTs, notificationType, ...payload } = notification;
+      this._dispatchCommand({
+        cmd: CommandType[cmd],
+        op: OpType[op],
+        serverTs,
+        notificationType,
+        [`${cmd}Message`]: payload,
+      });
+    });
+    if (hasMore) {
+      return this._syncNotifications(internal(this).lastNotificationTime);
+    }
+    return undefined;
+  }
+
+  async _fetchNotifications(timestamp) {
+    return this._requestWithSessionToken({
+      method: 'GET',
+      path: '/rtm/notifications',
+      query: {
+        start_ts: timestamp,
+        notification_type: 'permanent',
+      },
+    });
+  }
+
+  _createSessionManager() {
+    debug('create SessionManager');
+    return new SessionManager({
+      onBeforeGetSessionToken: this._connection.checkConnectionAvailability.bind(
+        this._connection
+      ),
+      refresh: (manager, expiredSessionToken) =>
+        manager.setSessionTokenAsync(
+          Promise.resolve(
+            new GenericCommand({
+              cmd: 'session',
+              op: 'refresh',
+              sessionMessage: new SessionCommand({
+                ua: `js/${VERSION}`,
+                st: expiredSessionToken,
+              }),
+            })
+          )
+            .then(async command => {
+              if (this.options.signatureFactory) {
+                const signatureResult = await runSignatureFactory(
+                  this.options.signatureFactory,
+                  [this._identity]
+                );
+                Object.assign(
+                  command.sessionMessage,
+                  keyRemap(
+                    {
+                      signature: 's',
+                      timestamp: 't',
+                      nonce: 'n',
+                    },
+                    signatureResult
+                  )
+                );
+              }
+              return command;
+            })
+            .then(this._send.bind(this))
+            .then(({ sessionMessage: { st: token, stTtl: ttl } }) => [
+              token,
+              ttl,
+            ])
+        ),
+    });
+  }
+
+  async _requestWithSessionToken({ headers, query, ...params }) {
+    const sessionToken = await this._sessionManager.getSessionToken();
+    return this._request({
+      headers: {
+        'X-LC-IM-Session-Token': sessionToken,
+        ...headers,
+      },
+      query: {
+        client_id: this.id,
+        ...query,
+      },
+      ...params,
+    });
+  }
+
+  /**
+   * 关闭客户端
+   * @return {Promise}
+   */
+  async close() {
+    this._debug('close session');
+    const _ee = internal(this)._eventemitter;
+    _ee.emit('beforeclose');
+    if (this._connection.is('connected')) {
+      const command = new GenericCommand({
+        cmd: 'session',
+        op: 'close',
+      });
+      await this._send(command);
+    }
+    _ee.emit('close');
+    this.emit(CLOSE, {
+      code: 0,
+    });
+  }
+
+  /**
+   * 获取 client 列表中在线的 client，每次查询最多 20 个 clientId，超出部分会被忽略
+   * @param  {String[]} clientIds 要查询的 client ids
+   * @return {Primse.&lt;String[]>} 在线的 client ids
+   */
+  async ping(clientIds) {
+    this._debug('ping');
+    if (!(clientIds instanceof Array)) {
+      throw new TypeError(`clientIds ${clientIds} is not an Array`);
+    }
+    if (!clientIds.length) {
+      return Promise.resolve([]);
+    }
+    const command = new GenericCommand({
+      cmd: 'session',
+      op: 'query',
+      sessionMessage: new SessionCommand({
+        sessionPeerIds: clientIds,
+      }),
+    });
+    const resCommand = await this._send(command);
+    return resCommand.sessionMessage.onlineSessionPeerIds;
+  }
+
+  /**
+   * 获取某个特定的对话
+   * @param  {String} id 对话 id，对应 _Conversation 表中的 objectId
+   * @param  {Boolean} [noCache=false] 强制不从缓存中获取
+   * @return {Promise.&lt;ConversationBase>} 如果 id 对应的对话不存在则返回 null
+   */
+  async getConversation(id, noCache = false) {
+    if (typeof id !== 'string') {
+      throw new TypeError(`${id} is not a String`);
+    }
+    if (!noCache) {
+      const cachedConversation = this._conversationCache.get(id);
+      if (cachedConversation) {
+        return cachedConversation;
+      }
+    }
+    if (isTemporaryConversatrionId(id)) {
+      return (await this._getTemporaryConversations([id]))[0] || null;
+    }
+    return this.getQuery()
+      .equalTo('objectId', id)
+      .find()
+      .then(conversations => conversations[0] || null);
+  }
+
+  /**
+   * 通过 id 批量获取某个特定的对话
+   * @since 3.4.0
+   * @param  {String[]} ids 对话 id 列表，对应 _Conversation 表中的 objectId
+   * @param  {Boolean} [noCache=false] 强制不从缓存中获取
+   * @return {Promise.&lt;ConversationBase[]>} 如果 id 对应的对话不存在则返回 null
+   */
+  async getConversations(ids, noCache = false) {
+    const remoteConversationIds = noCache
+      ? ids
+      : ids.filter(id => this._conversationCache.get(id) === null);
+    if (remoteConversationIds.length) {
+      const remoteTemporaryConversationIds = remove(
+        remoteConversationIds,
+        isTemporaryConversatrionId
+      );
+      const query = [];
+      if (remoteConversationIds.length) {
+        query.push(
+          this.getQuery()
+            .containedIn('objectId', remoteConversationIds)
+            .limit(999)
+            .find()
+        );
+      }
+      if (remoteTemporaryConversationIds.length) {
+        const remoteTemporaryConversationsPromise = remoteTemporaryConversationIds.map(
+          this._getTemporaryConversations.bind(this)
+        );
+        query.push(...remoteTemporaryConversationsPromise);
+      }
+      await Promise.all(query);
+    }
+    return ids.map(id => this._conversationCache.get(id));
+  }
+
+  async _getTemporaryConversations(ids) {
+    const command = new GenericCommand({
+      cmd: 'conv',
+      op: 'query',
+      convMessage: new ConvCommand({
+        tempConvIds: ids,
+      }),
+    });
+    const resCommand = await this._send(command);
+    return this._handleQueryResults(resCommand);
+  }
+
+  /**
+   * 构造一个 ConversationQuery 来查询对话
+   * @return {ConversationQuery.&lt;PersistentConversation>}
+   */
+  getQuery() {
+    return new ConversationQuery(this);
+  }
+
+  /**
+   * 构造一个 ConversationQuery 来查询聊天室
+   * @return {ConversationQuery.&lt;ChatRoom>}
+   */
+  getChatRoomQuery() {
+    return this.getQuery().equalTo('tr', true);
+  }
+
+  /**
+   * 构造一个 ConversationQuery 来查询服务号
+   * @return {ConversationQuery.&lt;ServiceConversation>}
+   */
+  getServiceConversationQuery() {
+    return this.getQuery().equalTo('sys', true);
+  }
+
+  async _executeQuery(query) {
+    const queryJSON = query.toJSON();
+    queryJSON.where = new JsonObjectMessage({
+      data: JSON.stringify(encode(queryJSON.where)),
+    });
+    const command = new GenericCommand({
+      cmd: 'conv',
+      op: 'query',
+      convMessage: new ConvCommand(queryJSON),
+    });
+    const resCommand = await this._send(command);
+    return this._handleQueryResults(resCommand);
+  }
+
+  async _handleQueryResults(resCommand) {
+    let conversations;
+    try {
+      conversations = decode(JSON.parse(resCommand.convMessage.results.data));
+    } catch (error) {
+      const commandString = JSON.stringify(trim(resCommand));
+      throw new Error(
+        `Parse query result failed: ${error.message}. Command: ${commandString}`
+      );
+    }
+    conversations = await Promise.all(
+      conversations.map(this._parseConversationFromRawData.bind(this))
+    );
+    return conversations.map(this._upsertConversationToCache.bind(this));
+  }
+
+  _upsertConversationToCache(fetchedConversation) {
+    let conversation = this._conversationCache.get(fetchedConversation.id);
+    if (!conversation) {
+      conversation = fetchedConversation;
+      this._debug('no match, set cache');
+      this._conversationCache.set(fetchedConversation.id, fetchedConversation);
+    } else {
+      this._debug('update cached conversation');
+      [
+        'creator',
+        'createdAt',
+        'updatedAt',
+        'lastMessageAt',
+        'lastMessage',
+        'mutedMembers',
+        'members',
+        '_attributes',
+        'transient',
+        'muted',
+      ].forEach(key => {
+        const value = fetchedConversation[key];
+        if (value !== undefined) conversation[key] = value;
+      });
+      if (conversation._reset) conversation._reset();
+    }
+    return conversation;
+  }
+
+  /**
+   * 反序列化消息，与 {@link Message#toFullJSON} 相对。
+   * @param {Object}
+   * @return {AVMessage} 解析后的消息
+   * @since 4.0.0
+   */
+  async parseMessage({ data, bin = false, ...properties }) {
+    const content = bin ? decodeBase64(data) : data;
+    const message = await this._messageParser.parse(content);
+    Object.assign(message, properties);
+    message._updateMentioned(this.id);
+    return message;
+  }
+
+  /**
+   * 反序列化对话，与 {@link Conversation#toFullJSON} 相对。
+   * @param {Object}
+   * @return {ConversationBase} 解析后的对话
+   * @since 4.0.0
+   */
+  async parseConversation({
+    id,
+    lastMessageAt,
+    lastMessage,
+    lastDeliveredAt,
+    lastReadAt,
+    unreadMessagesCount,
+    members,
+    mentioned,
+    ...properties
+  }) {
+    const conversationData = {
+      id,
+      lastMessageAt,
+      lastMessage,
+      lastDeliveredAt,
+      lastReadAt,
+      unreadMessagesCount,
+      members,
+      mentioned,
+    };
+    if (lastMessage) {
+      conversationData.lastMessage = await this.parseMessage(lastMessage);
+      conversationData.lastMessage._setStatus(MessageStatus.SENT);
+    }
+    const { transient, system, expiredAt } = properties;
+    if (transient) return new ChatRoom(conversationData, properties, this);
+    if (system)
+      return new ServiceConversation(conversationData, properties, this);
+    if (expiredAt || isTemporaryConversatrionId(id)) {
+      return new TemporaryConversation(conversationData, { expiredAt }, this);
+    }
+    return new Conversation(conversationData, properties, this);
+  }
+
+  async _parseConversationFromRawData(rawData) {
+    const data = keyRemap(
+      {
+        objectId: 'id',
+        lm: 'lastMessageAt',
+        m: 'members',
+        tr: 'transient',
+        sys: 'system',
+        c: 'creator',
+        mu: 'mutedMembers',
+      },
+      rawData
+    );
+    if (data.msg) {
+      data.lastMessage = {
+        data: data.msg,
+        bin: data.bin,
+        from: data.msg_from,
+        id: data.msg_mid,
+        timestamp: data.msg_timestamp,
+        updatedAt: data.patch_timestamp,
+      };
+      delete data.lastMessageFrom;
+      delete data.lastMessageId;
+      delete data.lastMessageTimestamp;
+      delete data.lastMessagePatchTimestamp;
+    }
+    const { ttl } = data;
+    if (ttl) data.expiredAt = Date.now() + ttl * 1000;
+    return this.parseConversation(data);
+  }
+
+  /**
+   * 创建一个对话
+   * @param {Object} options 除了下列字段外的其他字段将被视为对话的自定义属性
+   * @param {String[]} options.members 对话的初始成员列表，默认包含当前 client
+   * @param {String} [options.name] 对话的名字
+   * @param {Boolean} [options.unique=true] 唯一对话，当其为 true 时，如果当前已经有相同成员的对话存在则返回该对话，否则会创建新的对话
+   * @return {Promise.&lt;Conversation>}
+   */
+  async createConversation({
+    members: m,
+    name,
+    transient,
+    unique = true,
+    _tempConv: tempConv,
+    _tempConvTTL: tempConvTTL,
+    ...properties
+  } = {}) {
+    if (!(transient || Array.isArray(m))) {
+      throw new TypeError(`conversation members ${m} is not an array`);
+    }
+    let members = new Set(m);
+    members.add(this.id);
+    members = Array.from(members).sort();
+    let attr = properties || {};
+    if (name) {
+      if (typeof name !== 'string') {
+        throw new TypeError(`conversation name ${name} is not a string`);
+      }
+      attr.name = name;
+    }
+    attr = new JsonObjectMessage({
+      data: JSON.stringify(encode(attr)),
+    });
+
+    const startCommandJson = {
+      m: members,
+      attr,
+      transient,
+      unique,
+      tempConv,
+      tempConvTTL,
+    };
+
+    const command = new GenericCommand({
+      cmd: 'conv',
+      op: 'start',
+      convMessage: new ConvCommand(startCommandJson),
+    });
+
+    if (this.options.conversationSignatureFactory) {
+      const params = [null, this._identity, members, 'create'];
+      const signatureResult = await runSignatureFactory(
+        this.options.conversationSignatureFactory,
+        params
+      );
+      Object.assign(
+        command.convMessage,
+        keyRemap(
+          {
+            signature: 's',
+            timestamp: 't',
+            nonce: 'n',
+          },
+          signatureResult
+        )
+      );
+    }
+
+    const {
+      convMessage: { cid, cdate, tempConvTTL: ttl },
+    } = await this._send(command);
+    const data = {
+      name,
+      transient,
+      unique,
+      id: cid,
+      createdAt: cdate,
+      updatedAt: cdate,
+      lastMessageAt: null,
+      creator: this.id,
+      members: transient ? [] : members,
+      ...properties,
+    };
+    if (ttl) data.expiredAt = Date.now() + ttl * 1000;
+    const conversation = await this.parseConversation(data);
+    return this._upsertConversationToCache(conversation);
+  }
+
+  /**
+   * 创建一个聊天室
+   * @since 4.0.0
+   * @param {Object} options 除了下列字段外的其他字段将被视为对话的自定义属性
+   * @param {String} [options.name] 对话的名字
+   * @return {Promise.&lt;ChatRoom>}
+   */
+  async createChatRoom(param) {
+    return this.createConversation({
+      ...param,
+      transient: true,
+      members: null,
+      unique: false,
+      _tempConv: false,
+    });
+  }
+
+  /**
+   * 创建一个临时对话
+   * @since 4.0.0
+   * @param {Object} options
+   * @param {String[]} options.members 对话的初始成员列表，默认包含当前 client
+   * @param {String} [options.ttl] 对话存在时间，单位为秒，最大值与默认值均为 86400（一天），过期后该对话不再可用。
+   * @return {Promise.&lt;TemporaryConversation>}
+   */
+  async createTemporaryConversation({ ttl: _tempConvTTL, ...param }) {
+    return this.createConversation({
+      ...param,
+      _tempConv: true,
+      _tempConvTTL,
+    });
+  }
+
+  // jsdoc-ignore-start
+  @throttle(1000)
+  // jsdoc-ignore-end
+  _doSendRead() {
+    // if not connected, just skip everything
+    if (!this._connection.is('connected')) return;
+    const buffer = internal(this).readConversationsBuffer;
+    const conversations = Array.from(buffer);
+    if (!conversations.length) return;
+    const ids = conversations.map(conversation => {
+      if (!(conversation instanceof ConversationBase)) {
+        throw new TypeError(`${conversation} is not a Conversation`);
+      }
+      return conversation.id;
+    });
+    this._debug(`mark [${ids}] as read`);
+    buffer.clear();
+    this._sendReadCommand(conversations).catch(error => {
+      this._debug('send read failed: %O', error);
+      conversations.forEach(buffer.add.bind(buffer));
+    });
+  }
+
+  _sendReadCommand(conversations) {
+    return this._send(
+      new GenericCommand({
+        cmd: 'read',
+        readMessage: new ReadCommand({
+          convs: conversations.map(
+            conversation =>
+              new ReadTuple({
+                cid: conversation.id,
+                mid:
+                  conversation.lastMessage &amp;&amp;
+                  conversation.lastMessage.from !== this.id
+                    ? conversation.lastMessage.id
+                    : undefined,
+                timestamp: (conversation.lastMessageAt || new Date()).getTime(),
+              })
+          ),
+        }),
+      }),
+      false
+    );
+  }
+}
+
+/**
+ * 修改、撤回消息的原因
+ * @typedef PatchReason
+ * @type {Object}
+ * @property {number} code 负数为内置 code，正数为开发者在 hook 中自定义的 code。比如因为敏感词过滤被修改的 code 为 -4408。
+ * @property {string} [detail] 具体的原因说明。
+ */
+</code></pre>
+</article>
+
+
+
+
+
+        <hr>
+        <footer>
+            <strong></strong><br/>
+            Documented with <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+        </footer>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+window.isApi = true
+window.isManual = false
+window.doc = {
+    name: '',
+    longname: '',
+}
+
+if (!doc.name) isApi = false
+
+</script>
+<script src="js/rtd.js"></script>
+</body>
+</html>

@@ -1,0 +1,798 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Source: conversations/persistent-conversation.js | leancloud-realtime</title>
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+</head>
+<body>
+<div class="main-container">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label for="nav-trigger" class="navicon-button x">
+      <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+    <nav class="lnb" id="lnb">
+        <div class="nav-main">
+            <h1><a href="index.html" class="link">leancloud-realtime</a></h1>
+            <span class="version">
+            
+                v5.0.0-rc.6
+            
+            </span>
+        </div>
+        <div class="nav-search js-search">
+            <input type="text" placeholder="Search docs">
+            <ul class="searched-list"></ul>
+        </div>
+
+        
+
+        <div class="scroll">
+        <div class="nav-api hidden"><h3><a href="global.html">Global</a></h3></div><div class="nav-api hidden"><h3>Modules</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="module-leancloud-realtime.html">leancloud-realtime</a>
+                </header>
+                <div class="nav-item-sub hidden" id="module_leancloud-realtime_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.BinaryMessage">BinaryMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ChatRoom">ChatRoom</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.Conversation">Conversation</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ConversationMemberRole">ConversationMemberRole</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ConversationQuery">ConversationQuery</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.debug">debug</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.Message">Message</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.MessageParser">MessageParser</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.MessageQueryDirection">MessageQueryDirection</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.MessageStatus">MessageStatus</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.Realtime">Realtime</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.RecalledMessage">RecalledMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.ServiceConversation">ServiceConversation</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.TemporaryConversation">TemporaryConversation</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.TextMessage">TextMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.TypedMessage">TypedMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~ErrorCode">ErrorCode</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~Event">Event</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~MessagePriority">MessagePriority</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.messageField">messageField</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.messageType">messageType</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#.setAdapters">setAdapters</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime.html#~defineConversationProperty">defineConversationProperty</a></li></ul></div></div>
+            </li></ul></div><div class="nav-api hidden"><h3>Classes</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="BinaryMessage.html">BinaryMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="BinaryMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="BinaryMessage.html#buffer">buffer</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#from">from</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#id">id</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#status">status</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="BinaryMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="BinaryMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ChatRoom.html">ChatRoom</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ChatRoom_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="ChatRoom.html#createdAt">createdAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#creator">creator</a></li><li class="sub-nav-item "><a href="ChatRoom.html#id">id</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="ChatRoom.html#members">members</a></li><li class="sub-nav-item "><a href="ChatRoom.html#muted">muted</a></li><li class="sub-nav-item "><a href="ChatRoom.html#mutedMembers">mutedMembers</a></li><li class="sub-nav-item "><a href="ChatRoom.html#name">name</a></li><li class="sub-nav-item "><a href="ChatRoom.html#system">system</a></li><li class="sub-nav-item "><a href="ChatRoom.html#transient">transient</a></li><li class="sub-nav-item "><a href="ChatRoom.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="ChatRoom.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li><li class="sub-nav-item "><a href="ChatRoom.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="ChatRoom.html#add">add <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#blockMembers">blockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="ChatRoom.html#fetch">fetch <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#get">get</a></li><li class="sub-nav-item "><a href="ChatRoom.html#join">join <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#mute">mute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#muteMembers">muteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#queryBlockedMembers">queryBlockedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#queryMutedMembers">queryMutedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#quit">quit <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#remove">remove <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#save">save <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#set">set</a></li><li class="sub-nav-item "><a href="ChatRoom.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="ChatRoom.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="ChatRoom.html#unblockMembers">unblockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#unmute">unmute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#unmuteMembers">unmuteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ChatRoom.html#update">update <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="ChatRoom.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="ChatRoom.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Conversation.html">Conversation</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Conversation_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Conversation.html#createdAt">createdAt</a></li><li class="sub-nav-item "><a href="Conversation.html#creator">creator</a></li><li class="sub-nav-item "><a href="Conversation.html#id">id</a></li><li class="sub-nav-item "><a href="Conversation.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="Conversation.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="Conversation.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="Conversation.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="Conversation.html#members">members</a></li><li class="sub-nav-item "><a href="Conversation.html#muted">muted</a></li><li class="sub-nav-item "><a href="Conversation.html#mutedMembers">mutedMembers</a></li><li class="sub-nav-item "><a href="Conversation.html#name">name</a></li><li class="sub-nav-item "><a href="Conversation.html#system">system</a></li><li class="sub-nav-item "><a href="Conversation.html#transient">transient</a></li><li class="sub-nav-item "><a href="Conversation.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="Conversation.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li><li class="sub-nav-item "><a href="Conversation.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Conversation.html#add">add <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#blockMembers">blockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="Conversation.html#fetch">fetch <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#get">get</a></li><li class="sub-nav-item "><a href="Conversation.html#getAllMemberInfo">getAllMemberInfo <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#getMemberInfo">getMemberInfo <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#join">join <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#mute">mute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#muteMembers">muteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#queryBlockedMembers">queryBlockedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#queryMutedMembers">queryMutedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#quit">quit <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#remove">remove <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#save">save <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#set">set</a></li><li class="sub-nav-item "><a href="Conversation.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="Conversation.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="Conversation.html#unblockMembers">unblockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#unmute">unmute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#unmuteMembers">unmuteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#update">update <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Conversation.html#updateMemberRole">updateMemberRole <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="Conversation.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="Conversation.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="Conversation.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ConversationMemberInfo.html">ConversationMemberInfo</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ConversationMemberInfo_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="ConversationMemberInfo.html#conversationId">conversationId</a></li><li class="sub-nav-item "><a href="ConversationMemberInfo.html#isOwner">isOwner</a></li><li class="sub-nav-item "><a href="ConversationMemberInfo.html#memberId">memberId</a></li><li class="sub-nav-item "><a href="ConversationMemberInfo.html#role">role</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ConversationQuery.html">ConversationQuery</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ConversationQuery_sub"><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="ConversationQuery.html#.and">and</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#.or">or</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#addAscending">addAscending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#addDescending">addDescending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#ascending">ascending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#compact">compact</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#containedIn">containedIn</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#contains">contains</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#containsAll">containsAll</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#containsMembers">containsMembers</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#descending">descending</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#doesNotExist">doesNotExist</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#endsWith">endsWith</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#equalTo">equalTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#exists">exists</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#find">find <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ConversationQuery.html#first">first <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ConversationQuery.html#greaterThan">greaterThan</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#greaterThanOrEqualTo">greaterThanOrEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#lessThan">lessThan</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#lessThanOrEqualTo">lessThanOrEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#limit">limit</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#matches">matches</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#notContainsIn">notContainsIn</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#notEqualTo">notEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#sizeEqualTo">sizeEqualTo</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#skip">skip</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#startsWith">startsWith</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#withLastMessagesRefreshed">withLastMessagesRefreshed</a></li><li class="sub-nav-item "><a href="ConversationQuery.html#withMembers">withMembers</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="IMClient.html">IMClient</a>
+                </header>
+                <div class="nav-item-sub hidden" id="IMClient_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="IMClient.html#id">id</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="IMClient.html#close">close <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#createChatRoom">createChatRoom <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#createConversation">createConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#createTemporaryConversation">createTemporaryConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#emit">emit</a></li><li class="sub-nav-item "><a href="IMClient.html#getChatRoomQuery">getChatRoomQuery</a></li><li class="sub-nav-item "><a href="IMClient.html#getConversation">getConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#getConversations">getConversations <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#getQuery">getQuery</a></li><li class="sub-nav-item "><a href="IMClient.html#getServiceConversationQuery">getServiceConversationQuery</a></li><li class="sub-nav-item "><a href="IMClient.html#off">off</a></li><li class="sub-nav-item "><a href="IMClient.html#on">on</a></li><li class="sub-nav-item "><a href="IMClient.html#once">once</a></li><li class="sub-nav-item "><a href="IMClient.html#parseConversation">parseConversation <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#parseMessage">parseMessage <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="IMClient.html#ping">ping <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="IMClient.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:CLOSE">CLOSE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:CONFLICT">CONFLICT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:CONVERSATION_INFO_UPDATED">CONVERSATION_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:DISCONNECT">DISCONNECT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:OFFLINE">OFFLINE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:ONLINE">ONLINE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:RECONNECT">RECONNECT</a></li><li class="sub-nav-item "><a href="IMClient.html#event:RECONNECT_ERROR">RECONNECT_ERROR</a></li><li class="sub-nav-item "><a href="IMClient.html#event:RETRY">RETRY</a></li><li class="sub-nav-item "><a href="IMClient.html#event:SCHEDULE">SCHEDULE</a></li><li class="sub-nav-item "><a href="IMClient.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:UNMUTED">UNMUTED</a></li><li class="sub-nav-item "><a href="IMClient.html#event:UNREAD_MESSAGES_COUNT_UPDATE">UNREAD_MESSAGES_COUNT_UPDATE</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Message.html">Message</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Message_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Message.html#cid">cid</a></li><li class="sub-nav-item "><a href="Message.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="Message.html#from">from</a></li><li class="sub-nav-item "><a href="Message.html#id">id</a></li><li class="sub-nav-item "><a href="Message.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="Message.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="Message.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="Message.html#status">status</a></li><li class="sub-nav-item "><a href="Message.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="Message.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Message.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="Message.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="Message.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="Message.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="Message.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="MessageParser.html">MessageParser</a>
+                </header>
+                <div class="nav-item-sub hidden" id="MessageParser_sub"><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="MessageParser.html#parse">parse</a></li><li class="sub-nav-item "><a href="MessageParser.html#register">register</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Realtime.html">Realtime</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Realtime_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Realtime.html#register">register</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Realtime.html#createIMClient">createIMClient <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Realtime.html#emit">emit</a></li><li class="sub-nav-item "><a href="Realtime.html#off">off</a></li><li class="sub-nav-item "><a href="Realtime.html#on">on</a></li><li class="sub-nav-item "><a href="Realtime.html#once">once</a></li><li class="sub-nav-item "><a href="Realtime.html#pause">pause</a></li><li class="sub-nav-item "><a href="Realtime.html#resume">resume</a></li><li class="sub-nav-item "><a href="Realtime.html#retry">retry</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="Realtime.html#event:DISCONNECT">DISCONNECT</a></li><li class="sub-nav-item "><a href="Realtime.html#event:OFFLINE">OFFLINE</a></li><li class="sub-nav-item "><a href="Realtime.html#event:ONLINE">ONLINE</a></li><li class="sub-nav-item "><a href="Realtime.html#event:RECONNECT">RECONNECT</a></li><li class="sub-nav-item "><a href="Realtime.html#event:RETRY">RETRY</a></li><li class="sub-nav-item "><a href="Realtime.html#event:SCHEDULE">SCHEDULE</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="RecalledMessage.html">RecalledMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="RecalledMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="RecalledMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#from">from</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#id">id</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#status">status</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#text">text</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#type">type</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="RecalledMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="RecalledMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ServiceConversation.html">ServiceConversation</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ServiceConversation_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="ServiceConversation.html#createdAt">createdAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#creator">creator</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#id">id</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#members">members</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#muted">muted</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#mutedMembers">mutedMembers</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#name">name</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#system">system</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#transient">transient</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="ServiceConversation.html#add">add <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#blockMembers">blockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#fetch">fetch <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#get">get</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#join">join <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#mute">mute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#muteMembers">muteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#queryBlockedMembers">queryBlockedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#queryMutedMembers">queryMutedMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#quit">quit <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#remove">remove <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#save">save <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#set">set</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#subscribe">subscribe <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unblockMembers">unblockMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unmute">unmute <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unmuteMembers">unmuteMembers <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#unsubscribe">unsubscribe <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="ServiceConversation.html#update">update <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="ServiceConversation.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="ServiceConversation.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="TemporaryConversation.html">TemporaryConversation</a>
+                </header>
+                <div class="nav-item-sub hidden" id="TemporaryConversation_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="TemporaryConversation.html#expired">expired</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#expiredAt">expiredAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#id">id</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastDeliveredAt">lastDeliveredAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastMessage">lastMessage</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastMessageAt">lastMessageAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#lastReadAt">lastReadAt</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#members">members</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#unreadMessagesCount">unreadMessagesCount</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#unreadMessagesMentioned">unreadMessagesMentioned</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="TemporaryConversation.html#count">count <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#createMessagesIterator">createMessagesIterator</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#emit">emit</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#fetchReceiptTimestamps">fetchReceiptTimestamps <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#off">off</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#on">on</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#once">once</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#queryMessages">queryMessages <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#read">read <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#recall">recall <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#send">send <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#toJSON">toJSON</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#update">update <span class="async"> async</span></a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="TemporaryConversation.html#event:BLOCKED">BLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:INFO_UPDATED">INFO_UPDATED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:INVITED">INVITED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:KICKED">KICKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:LAST_DELIVERED_AT_UPDATE">LAST_DELIVERED_AT_UPDATE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:LAST_READ_AT_UPDATE">LAST_READ_AT_UPDATE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBER_INFO_UPDATED">MEMBER_INFO_UPDATED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_BLOCKED">MEMBERS_BLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_JOINED">MEMBERS_JOINED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_LEFT">MEMBERS_LEFT</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_MUTED">MEMBERS_MUTED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_UNBLOCKED">MEMBERS_UNBLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MEMBERS_UNMUTED">MEMBERS_UNMUTED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MESSAGE">MESSAGE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MESSAGE_RECALL">MESSAGE_RECALL</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MESSAGE_UPDATE">MESSAGE_UPDATE</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:MUTED">MUTED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:UNBLOCKED">UNBLOCKED</a></li><li class="sub-nav-item "><a href="TemporaryConversation.html#event:UNMUTED">UNMUTED</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="TextMessage.html">TextMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="TextMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="TextMessage.html#.TYPE">TYPE</a></li><li class="sub-nav-item "><a href="TextMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="TextMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="TextMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="TextMessage.html#from">from</a></li><li class="sub-nav-item "><a href="TextMessage.html#id">id</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="TextMessage.html#status">status</a></li><li class="sub-nav-item "><a href="TextMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="TextMessage.html#text">text</a></li><li class="sub-nav-item "><a href="TextMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="TextMessage.html#type">type</a></li><li class="sub-nav-item "><a href="TextMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="TextMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="TextMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="TextMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="TextMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="TextMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="TextMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="TextMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="TextMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="TextMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="TypedMessage.html">TypedMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="TypedMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="TypedMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="TypedMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="TypedMessage.html#from">from</a></li><li class="sub-nav-item "><a href="TypedMessage.html#id">id</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#status">status</a></li><li class="sub-nav-item "><a href="TypedMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="TypedMessage.html#text">text</a></li><li class="sub-nav-item "><a href="TypedMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="TypedMessage.html#type">type</a></li><li class="sub-nav-item "><a href="TypedMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="TypedMessage.html#.parse">parse</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="TypedMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="TypedMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li></ul></div><div class="nav-api hidden"><h3>Interfaces</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="AVMessage.html">AVMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="AVMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="AVMessage.html#.sendOptions">sendOptions</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="AVMessage.html#.parse">parse</a></li><li class="sub-nav-item "><a href="AVMessage.html#.validate">validate</a></li><li class="sub-nav-item "><a href="AVMessage.html#getPayload">getPayload</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Plugin.html">Plugin</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Plugin_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Plugin.html#.afterMessageParse">afterMessageParse</a></li><li class="sub-nav-item "><a href="Plugin.html#.beforeMessageDispatch">beforeMessageDispatch</a></li><li class="sub-nav-item "><a href="Plugin.html#.beforeMessageParse">beforeMessageParse</a></li><li class="sub-nav-item "><a href="Plugin.html#.messageClasses">messageClasses</a></li><li class="sub-nav-item "><a href="Plugin.html#.name">name</a></li><li class="sub-nav-item "><a href="Plugin.html#.onConversationCreate">onConversationCreate</a></li><li class="sub-nav-item "><a href="Plugin.html#.onIMClientCreate">onIMClientCreate</a></li><li class="sub-nav-item "><a href="Plugin.html#.onRealtimeCreate">onRealtimeCreate</a></li></ul></div></div>
+            </li></ul></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Docs</a> »</li>
+            <li>Source: conversations/persistent-conversation.js</li>
+        </ul>
+        <hr>
+        
+
+
+
+    
+<article>
+    <pre class="prettyprint source linenums"><code>import isEmpty from 'lodash/isEmpty';
+import cloneDeep from 'lodash/cloneDeep';
+import find from 'lodash/find';
+import get from 'lodash/get';
+import ConversationBase from './conversation-base';
+import {
+  decodeDate,
+  getTime,
+  encode,
+  keyRemap,
+  union,
+  difference,
+  internal,
+  setValue,
+  ensureArray,
+} from '../utils';
+import {
+  GenericCommand,
+  ConvCommand,
+  JsonObjectMessage,
+  BlacklistCommand,
+  OpType,
+} from '../../proto/message';
+import runSignatureFactory from '../signature-factory-runner';
+import { createError } from '../error';
+
+/**
+ * 部分失败异常
+ * @typedef OperationFailureError
+ * @type {Error}
+ * @property {string} message 异常信息
+ * @property {string[]} clientIds 因为该原因失败的 client id 列表
+ * @property {number} [code] 错误码
+ * @property {string} [detail] 详细信息
+ */
+
+/**
+ * 部分成功的结果
+ * @typedef PartiallySuccess
+ * @type {Object}
+ * @property {string[]} successfulClientIds 成功的 client id 列表
+ * @property {OperationFailureError[]} failures 失败的异常列表
+ */
+
+/**
+ * 分页查询结果
+ * @typedef PagedResults
+ * @type {Object}
+ * @property {T[]} results 查询结果
+ * @property {string} [next] 存在表示还有更多结果，在下次查询中带上可实现翻页。
+ */
+
+const createPartiallySuccess = ({ allowedPids, failedPids }) => ({
+  successfulClientIds: allowedPids,
+  failures: failedPids.map(({ pids, ...error }) =>
+    Object.assign(createError(error), { clientIds: pids })
+  ),
+});
+
+/**
+ * @extends ConversationBase
+ * @private
+ * @abstract
+ */
+class PersistentConversation extends ConversationBase {
+  constructor(
+    data,
+    {
+      creator,
+      createdAt,
+      updatedAt,
+      transient = false,
+      system = false,
+      muted = false,
+      mutedMembers = [],
+      ...attributes
+    },
+    client
+  ) {
+    super(
+      {
+        ...data,
+        /**
+         * 对话创建者
+         * @memberof PersistentConversation#
+         * @type {String}
+         */
+        creator,
+        /**
+         * 对话创建时间
+         * @memberof PersistentConversation#
+         * @type {Date}
+         */
+        createdAt,
+        /**
+         * 对话更新时间
+         * @memberof PersistentConversation#
+         * @type {Date}
+         */
+        updatedAt,
+        /**
+         * 对该对话设置了静音的用户列表
+         * @memberof PersistentConversation#
+         * @type {?String[]}
+         */
+        mutedMembers,
+        /**
+         * 暂态对话标记
+         * @memberof PersistentConversation#
+         * @type {Boolean}
+         */
+        transient,
+        /**
+         * 系统对话标记
+         * @memberof PersistentConversation#
+         * @type {Boolean}
+         * @since 3.3.0
+         */
+        system,
+        /**
+         * 当前用户静音该对话标记
+         * @memberof PersistentConversation#
+         * @type {Boolean}
+         */
+        muted,
+        _attributes: attributes,
+      },
+      client
+    );
+    this._reset();
+  }
+
+  set createdAt(value) {
+    this._createdAt = decodeDate(value);
+  }
+
+  get createdAt() {
+    return this._createdAt;
+  }
+
+  set updatedAt(value) {
+    this._updatedAt = decodeDate(value);
+  }
+
+  get updatedAt() {
+    return this._updatedAt;
+  }
+
+  /**
+   * 对话名字，对应 _Conversation 表中的 name
+   * @type {String}
+   */
+  get name() {
+    return this.get('name');
+  }
+
+  set name(value) {
+    this.set('name', value);
+  }
+
+  /**
+   * 获取对话的自定义属性
+   * @since 3.2.0
+   * @param  {String} key key 属性的键名，'x' 对应 Conversation 表中的 x 列
+   * @return {Any} 属性的值
+   */
+  get(key) {
+    return get(internal(this).currentAttributes, key);
+  }
+
+  /**
+   * 设置对话的自定义属性
+   * @since 3.2.0
+   * @param {String} key 属性的键名，'x' 对应 Conversation 表中的 x 列，支持使用 'x.y.z' 来修改对象的部分字段。
+   * @param {Any} value 属性的值
+   * @return {this} self
+   * @example
+   *
+   * // 设置对话的 color 属性
+   * conversation.set('color', {
+   *   text: '#000',
+   *   background: '#DDD',
+   * });
+   * // 设置对话的 color.text 属性
+   * conversation.set('color.text', '#333');
+   */
+  set(key, value) {
+    this._debug(`set [${key}]: ${value}`);
+    const { pendingAttributes } = internal(this);
+    const pendingKeys = Object.keys(pendingAttributes);
+    // suppose pendingAttributes = { 'a.b': {} }
+    // set 'a' or 'a.b': delete 'a.b'
+    const re = new RegExp(`^${key}`);
+    const childKeys = pendingKeys.filter(re.test.bind(re));
+    childKeys.forEach(k => {
+      delete pendingAttributes[k];
+    });
+    if (childKeys.length) {
+      pendingAttributes[key] = value;
+    } else {
+      // set 'a.c': nothing to do
+      // set 'a.b.c.d': assign c: { d: {} } to 'a.b'
+      const parentKey = find(pendingKeys, k => key.indexOf(k) === 0); // 'a.b'
+      if (parentKey) {
+        setValue(
+          pendingAttributes[parentKey],
+          key.slice(parentKey.length + 1),
+          value
+        );
+      } else {
+        pendingAttributes[key] = value;
+      }
+    }
+    this._buildCurrentAttributes();
+    return this;
+  }
+
+  _buildCurrentAttributes() {
+    const { pendingAttributes } = internal(this);
+    internal(this).currentAttributes = Object.keys(pendingAttributes).reduce(
+      (target, k) => setValue(target, k, pendingAttributes[k]),
+      cloneDeep(this._attributes)
+    );
+  }
+
+  _updateServerAttributes(attributes) {
+    Object.keys(attributes).forEach(key =>
+      setValue(this._attributes, key, attributes[key])
+    );
+    this._buildCurrentAttributes();
+  }
+
+  _reset() {
+    Object.assign(internal(this), {
+      pendingAttributes: {},
+      currentAttributes: this._attributes,
+    });
+  }
+
+  /**
+   * 保存当前对话的属性至服务器
+   * @return {Promise.&lt;this>} self
+   */
+  async save() {
+    this._debug('save');
+    const attr = internal(this).pendingAttributes;
+    if (isEmpty(attr)) {
+      this._debug('nothing touched, resolve with self');
+      return this;
+    }
+    this._debug('attr: %O', attr);
+    const convMessage = new ConvCommand({
+      attr: new JsonObjectMessage({
+        data: JSON.stringify(encode(attr)),
+      }),
+    });
+    const resCommand = await this._send(
+      new GenericCommand({
+        op: 'update',
+        convMessage,
+      })
+    );
+    this.updatedAt = resCommand.convMessage.udate;
+    this._attributes = internal(this).currentAttributes;
+    internal(this).pendingAttributes = {};
+    return this;
+  }
+
+  /**
+   * 从服务器更新对话的属性
+   * @return {Promise.&lt;this>} self
+   */
+  async fetch() {
+    const query = this._client.getQuery().equalTo('objectId', this.id);
+    await query.find();
+    return this;
+  }
+
+  /**
+   * 静音，客户端拒绝收到服务器端的离线推送通知
+   * @return {Promise.&lt;this>} self
+   */
+  async mute() {
+    this._debug('mute');
+    await this._send(
+      new GenericCommand({
+        op: 'mute',
+      })
+    );
+    if (!this.transient) {
+      this.muted = true;
+      this.mutedMembers = union(this.mutedMembers, [this._client.id]);
+    }
+    return this;
+  }
+
+  /**
+   * 取消静音
+   * @return {Promise.&lt;this>} self
+   */
+  async unmute() {
+    this._debug('unmute');
+    await this._send(
+      new GenericCommand({
+        op: 'unmute',
+      })
+    );
+    if (!this.transient) {
+      this.muted = false;
+      this.mutedMembers = difference(this.mutedMembers, [this._client.id]);
+    }
+    return this;
+  }
+
+  async _appendConversationSignature(command, action, clientIds) {
+    if (this._client.options.conversationSignatureFactory) {
+      const params = [this.id, this._client.id, clientIds.sort(), action];
+      const signatureResult = await runSignatureFactory(
+        this._client.options.conversationSignatureFactory,
+        params
+      );
+      Object.assign(
+        command.convMessage,
+        keyRemap(
+          {
+            signature: 's',
+            timestamp: 't',
+            nonce: 'n',
+          },
+          signatureResult
+        )
+      );
+    }
+  }
+
+  async _appendBlacklistSignature(command, action, clientIds) {
+    if (this._client.options.blacklistSignatureFactory) {
+      const params = [this.id, this._client.id, clientIds.sort(), action];
+      const signatureResult = await runSignatureFactory(
+        this._client.options.blacklistSignatureFactory,
+        params
+      );
+      Object.assign(
+        command.blacklistMessage,
+        keyRemap(
+          {
+            signature: 's',
+            timestamp: 't',
+            nonce: 'n',
+          },
+          signatureResult
+        )
+      );
+    }
+  }
+
+  /**
+   * 增加成员
+   * @param {String|String[]} clientIds 新增成员 client id
+   * @return {Promise.&lt;PartiallySuccess>} 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+   */
+  async add(clientIds) {
+    this._debug('add', clientIds);
+    if (typeof clientIds === 'string') {
+      clientIds = [clientIds]; // eslint-disable-line no-param-reassign
+    }
+    const command = new GenericCommand({
+      op: 'add',
+      convMessage: new ConvCommand({
+        m: clientIds,
+      }),
+    });
+    await this._appendConversationSignature(command, 'invite', clientIds);
+    const {
+      convMessage,
+      convMessage: { allowedPids },
+    } = await this._send(command);
+    this._addMembers(allowedPids);
+    return createPartiallySuccess(convMessage);
+  }
+
+  /**
+   * 剔除成员
+   * @param {String|String[]} clientIds 成员 client id
+   * @return {Promise.&lt;PartiallySuccess>} 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+   */
+  async remove(clientIds) {
+    this._debug('remove', clientIds);
+    if (typeof clientIds === 'string') {
+      clientIds = [clientIds]; // eslint-disable-line no-param-reassign
+    }
+    const command = new GenericCommand({
+      op: 'remove',
+      convMessage: new ConvCommand({
+        m: clientIds,
+      }),
+    });
+    await this._appendConversationSignature(command, 'kick', clientIds);
+    const {
+      convMessage,
+      convMessage: { allowedPids },
+    } = await this._send(command);
+    this._removeMembers(allowedPids);
+    return createPartiallySuccess(convMessage);
+  }
+
+  /**
+   * （当前用户）加入该对话
+   * @return {Promise.&lt;this>} self
+   */
+  async join() {
+    this._debug('join');
+    return this.add(this._client.id).then(({ failures }) => {
+      if (failures[0]) throw failures[0];
+      return this;
+    });
+  }
+
+  /**
+   * （当前用户）退出该对话
+   * @return {Promise.&lt;this>} self
+   */
+  async quit() {
+    this._debug('quit');
+    return this.remove(this._client.id).then(({ failures }) => {
+      if (failures[0]) throw failures[0];
+      return this;
+    });
+  }
+
+  /**
+   * 在该对话中禁言成员
+   * @param {String|String[]} clientIds 成员 client id
+   * @return {Promise.&lt;PartiallySuccess>} 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+   */
+  async muteMembers(clientIds) {
+    this._debug('mute', clientIds);
+    clientIds = ensureArray(clientIds); // eslint-disable-line no-param-reassign
+    const command = new GenericCommand({
+      op: OpType.add_shutup,
+      convMessage: new ConvCommand({
+        m: clientIds,
+      }),
+    });
+    const { convMessage } = await this._send(command);
+    return createPartiallySuccess(convMessage);
+  }
+
+  /**
+   * 在该对话中解除成员禁言
+   * @param {String|String[]} clientIds 成员 client id
+   * @return {Promise.&lt;PartiallySuccess>} 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+   */
+  async unmuteMembers(clientIds) {
+    this._debug('unmute', clientIds);
+    clientIds = ensureArray(clientIds); // eslint-disable-line no-param-reassign
+    const command = new GenericCommand({
+      op: OpType.remove_shutup,
+      convMessage: new ConvCommand({
+        m: clientIds,
+      }),
+    });
+    const { convMessage } = await this._send(command);
+    return createPartiallySuccess(convMessage);
+  }
+
+  /**
+   * 查询该对话禁言成员列表
+   * @param {Object} [options]
+   * @param {Number} [options.limit] 返回的成员数量，服务器默认值 10
+   * @param {String} [options.next] 从指定 next 开始查询，与 limit 一起使用可以完成翻页。
+   * @return {PagedResults.&lt;string>} 查询结果。其中的 cureser 存在表示还有更多结果。
+   */
+  async queryMutedMembers({ limit, next } = {}) {
+    this._debug('query muted: limit %O, next: %O', limit, next);
+    const command = new GenericCommand({
+      op: OpType.query_shutup,
+      convMessage: new ConvCommand({
+        limit,
+        next,
+      }),
+    });
+    const {
+      convMessage: { m, next: newNext },
+    } = await this._send(command);
+    return {
+      results: m,
+      next: newNext,
+    };
+  }
+
+  /**
+   * 将用户加入该对话黑名单
+   * @param {String|String[]} clientIds 成员 client id
+   * @return {Promise.&lt;PartiallySuccess>} 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+   */
+  async blockMembers(clientIds) {
+    this._debug('block', clientIds);
+    clientIds = ensureArray(clientIds); // eslint-disable-line no-param-reassign
+    const command = new GenericCommand({
+      cmd: 'blacklist',
+      op: OpType.block,
+      blacklistMessage: new BlacklistCommand({
+        srcCid: this.id,
+        toPids: clientIds,
+      }),
+    });
+    await this._appendBlacklistSignature(
+      command,
+      'conversation-block-clients',
+      clientIds
+    );
+    const { blacklistMessage } = await this._send(command);
+    return createPartiallySuccess(blacklistMessage);
+  }
+
+  /**
+   * 将用户移出该对话黑名单
+   * @param {String|String[]} clientIds 成员 client id
+   * @return {Promise.&lt;PartiallySuccess>} 部分成功结果，包含了成功的 id 列表、失败原因与对应的 id 列表
+   */
+  async unblockMembers(clientIds) {
+    this._debug('unblock', clientIds);
+    clientIds = ensureArray(clientIds); // eslint-disable-line no-param-reassign
+    const command = new GenericCommand({
+      cmd: 'blacklist',
+      op: OpType.unblock,
+      blacklistMessage: new BlacklistCommand({
+        srcCid: this.id,
+        toPids: clientIds,
+      }),
+    });
+    await this._appendBlacklistSignature(
+      command,
+      'conversation-unblock-clients',
+      clientIds
+    );
+    const { blacklistMessage } = await this._send(command);
+    return createPartiallySuccess(blacklistMessage);
+  }
+
+  /**
+   * 查询该对话黑名单
+   * @param {Object} [options]
+   * @param {Number} [options.limit] 返回的成员数量，服务器默认值 10
+   * @param {String} [options.next] 从指定 next 开始查询，与 limit 一起使用可以完成翻页
+   * @return {PagedResults.&lt;string>} 查询结果。其中的 cureser 存在表示还有更多结果。
+   */
+  async queryBlockedMembers({ limit, next } = {}) {
+    this._debug('query blocked: limit %O, next: %O', limit, next);
+    const command = new GenericCommand({
+      cmd: 'blacklist',
+      op: OpType.query,
+      blacklistMessage: new BlacklistCommand({
+        srcCid: this.id,
+        limit,
+        next,
+      }),
+    });
+    const {
+      blacklistMessage: { blockedPids, next: newNext },
+    } = await this._send(command);
+    return {
+      results: blockedPids,
+      next: newNext,
+    };
+  }
+
+  toFullJSON() {
+    const {
+      creator,
+      system,
+      transient,
+      createdAt,
+      updatedAt,
+      _attributes,
+    } = this;
+    return {
+      ...super.toFullJSON(),
+      creator,
+      system,
+      transient,
+      createdAt: getTime(createdAt),
+      updatedAt: getTime(updatedAt),
+      ..._attributes,
+    };
+  }
+
+  toJSON() {
+    const {
+      creator,
+      system,
+      transient,
+      muted,
+      mutedMembers,
+      createdAt,
+      updatedAt,
+      _attributes,
+    } = this;
+    return {
+      ...super.toJSON(),
+      creator,
+      system,
+      transient,
+      muted,
+      mutedMembers,
+      createdAt,
+      updatedAt,
+      ..._attributes,
+    };
+  }
+}
+
+export default PersistentConversation;
+</code></pre>
+</article>
+
+
+
+
+
+        <hr>
+        <footer>
+            <strong></strong><br/>
+            Documented with <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+        </footer>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+window.isApi = true
+window.isManual = false
+window.doc = {
+    name: '',
+    longname: '',
+}
+
+if (!doc.name) isApi = false
+
+</script>
+<script src="js/rtd.js"></script>
+</body>
+</html>

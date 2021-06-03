@@ -1,0 +1,297 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Source: call/call.js | leancloud-realtime-plugin-webrtc</title>
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+</head>
+<body>
+<div class="main-container">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label for="nav-trigger" class="navicon-button x">
+      <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+    <nav class="lnb" id="lnb">
+        <div class="nav-main">
+            <h1><a href="index.html" class="link">leancloud-realtime-plugin-webrtc</a></h1>
+            <span class="version">
+            
+                v1.0.0
+            
+            </span>
+        </div>
+        <div class="nav-search js-search">
+            <input type="text" placeholder="Search docs">
+            <ul class="searched-list"></ul>
+        </div>
+
+        
+
+        <div class="scroll">
+        <div class="nav-api hidden"><h3>Global</h3><ul><li class="nav-item"><a href="global.html#createWebRTCClient">createWebRTCClient</a></li></ul></div><div class="nav-api hidden"><h3>Modules</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="module-leancloud-realtime-plugin-webrtc.html">leancloud-realtime-plugin-webrtc</a>
+                </header>
+                <div class="nav-item-sub hidden" id="module_leancloud-realtime-plugin-webrtc_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-webrtc.html#.isWebRTCSupported">isWebRTCSupported</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-webrtc.html#.WebRTCPlugin">WebRTCPlugin</a></li></ul></div></div>
+            </li></ul></div><div class="nav-api hidden"><h3>Classes</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Call.html">Call</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Call_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Call.html#state">state</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Call.html#close">close</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="Call.html#event:close">close</a></li><li class="sub-nav-item "><a href="Call.html#event:connect">connect</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="IncomingCall.html">IncomingCall</a>
+                </header>
+                <div class="nav-item-sub hidden" id="IncomingCall_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="IncomingCall.html#from">from</a></li><li class="sub-nav-item "><a href="IncomingCall.html#state">state</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="IncomingCall.html#accept">accept</a></li><li class="sub-nav-item "><a href="IncomingCall.html#close">close</a></li><li class="sub-nav-item "><a href="IncomingCall.html#refuse">refuse</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="IncomingCall.html#event:cancel">cancel</a></li><li class="sub-nav-item "><a href="IncomingCall.html#event:close">close</a></li><li class="sub-nav-item "><a href="IncomingCall.html#event:connect">connect</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="OutgoingCall.html">OutgoingCall</a>
+                </header>
+                <div class="nav-item-sub hidden" id="OutgoingCall_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="OutgoingCall.html#state">state</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#to">to</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="OutgoingCall.html#cancel">cancel</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#close">close</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="OutgoingCall.html#event:close">close</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#event:connect">connect</a></li><li class="sub-nav-item "><a href="OutgoingCall.html#event:refuse">refuse</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="WebRTCClient.html">WebRTCClient</a>
+                </header>
+                <div class="nav-item-sub hidden" id="WebRTCClient_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="WebRTCClient.html#id">id</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="WebRTCClient.html#call">call</a></li><li class="sub-nav-item "><a href="WebRTCClient.html#close">close</a></li></ul></div><div><div class="member-type">Events</div><ul class="inner"><li class="sub-nav-item "><a href="WebRTCClient.html#event:call">call</a></li><li class="sub-nav-item "><a href="WebRTCClient.html#event:conflict">conflict</a></li></ul></div></div>
+            </li></ul></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Docs</a> »</li>
+            <li>Source: call/call.js</li>
+        </ul>
+        <hr>
+        
+
+
+
+    
+<article>
+    <pre class="prettyprint source linenums"><code>import EventEmitter from 'eventemitter3';
+import createCallStateMachine from './call-state-machine';
+import Answer from '../signalings/answer';
+import ICECandidate from '../signalings/ice-candidate';
+import Refusal from '../signalings/refusal';
+import Cancelation from '../signalings/cancelation';
+
+export default class Call extends EventEmitter {
+  /**
+   * {@link IncomingCall} 与 {@link OutgoingCall} 的基类
+   * @abstract
+   */
+  constructor(conversation, RTCConfiguration) {
+    super();
+    this._setConversation(conversation);
+    this._peerConnection = this._createPeerConnection(RTCConfiguration);
+    this._call = createCallStateMachine();
+    this._promises = {};
+    const streamReady = new Promise(resolve => {
+      this._promises.resolveStreamReady = resolve;
+    });
+    const accept = new Promise(resolve => {
+      this._promises.resolveAccept = resolve;
+    });
+    Promise.all([streamReady, accept]).then(([stream]) => {
+      if (this._call.can('connect')) {
+        this._call.connect();
+        /**
+         * 通话连接成功
+         * @event Call#connect
+         * @param {MediaStream} stram 对方的媒体流
+         */
+        this.emit('connect', stream);
+      }
+    });
+  }
+
+  /**
+   * 当前通话状态
+   * （&lt;code>calling&lt;/code>, &lt;code>connected&lt;/code>, &lt;code>closed&lt;/code>,
+   * &lt;code>refused&lt;/code>, &lt;code>canceled&lt;/code>）
+   * @type {string}
+   * @readonly
+   */
+  get state() {
+    return this._call.current;
+  }
+
+  /**
+   * 结束通话
+   * @return {Promise}
+   */
+  close() {
+    return Promise.resolve().then(() => {
+      this._call.close();
+      this._destroyPeerConnection();
+      this._peerConnection.close();
+      this._destroy();
+    });
+  }
+
+  _handleCloseEvent() {
+    if (this._call.can('close')) {
+      this.close();
+      /**
+       * 通话结束，可能是对方挂断或网络中断
+       * @event Call#close
+       */
+      this.emit('close');
+    }
+  }
+
+  _setConversation(conversation) {
+    if (this._conversation) {
+      this._conversation.off('message');
+    }
+    if (conversation) {
+      this._conversation = conversation;
+      conversation.on('message', this._handleMessage.bind(this));
+    }
+  }
+
+  _destroy() {
+    this._conversation.off('message');
+  }
+
+  _createPeerConnection(RTCConfiguration) {
+    const connection = new RTCPeerConnection(RTCConfiguration);
+    connection.onicecandidate = this._handleICECandidateEvent.bind(this);
+    connection.onaddstream = this._handleAddStreamEvent.bind(this);
+    connection.onnremovestream = this._handleRemoveStreamEvent.bind(this);
+    connection.oniceconnectionstatechange = this._handleICEConnectionStateChangeEvent.bind(
+      this
+    );
+    connection.onsignalingstatechange = this._handleSignalingStateChangeEvent.bind(
+      this
+    );
+    return connection;
+  }
+
+  _destroyPeerConnection() {
+    const connection = this._peerConnection;
+    delete connection.onaddstream;
+    delete connection.onremovestream;
+    delete connection.onnicecandidate;
+    delete connection.oniceconnectionstatechange;
+    delete connection.onsignalingstatechange;
+  }
+
+  _handleMessage(message) {
+    if (message instanceof Answer) {
+      return this._handleAnswer(message);
+    }
+    if (message instanceof Refusal) {
+      return this._handleRefusal();
+    }
+    if (message instanceof Cancelation) {
+      return this._handleCancelation();
+    }
+    if (message instanceof ICECandidate) {
+      return this._handleICECandidate(message);
+    }
+    return false;
+  }
+
+  _handleICECandidate(message) {
+    const candidate = new RTCIceCandidate(message.payload);
+    if (this._peerConnection) {
+      this._peerConnection
+        .addIceCandidate(candidate)
+        .catch(console.error.bind(console));
+    }
+  }
+
+  _handleICECandidateEvent(event) {
+    if (event.candidate &amp;&amp; this._conversation) {
+      return this._conversation
+        .send(new ICECandidate(event.candidate))
+        .catch(console.error.bind(console));
+    }
+    return false;
+  }
+
+  _handleAddStreamEvent(event) {
+    this._promises.resolveStreamReady(event.stream);
+  }
+
+  _handleRemoveStreamEvent() {
+    this._handleCloseEvent();
+  }
+
+  _handleICEConnectionStateChangeEvent() {
+    switch (this._peerConnection.iceConnectionState) {
+      case 'closed':
+      case 'failed':
+      case 'disconnected':
+        this._handleCloseEvent();
+        break;
+      default:
+    }
+  }
+
+  _handleSignalingStateChangeEvent() {
+    switch (this._peerConnection.signalingState) {
+      case 'closed':
+        this._handleCloseEvent();
+        break;
+      default:
+    }
+  }
+
+  /* eslint-disable class-methods-use-this */
+  _handleAnswer() {
+    throw new Error('not implemented');
+  }
+
+  _handleRefusal() {
+    throw new Error('not implemented');
+  }
+
+  _handleCancelation() {
+    throw new Error('not implemented');
+  }
+  /* eslint-enable class-methods-use-this */
+}
+</code></pre>
+</article>
+
+
+
+
+
+        <hr>
+        <footer>
+            <strong></strong><br/>
+            Documented with <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+        </footer>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+window.isApi = true
+window.isManual = false
+window.doc = {
+    name: '',
+    longname: '',
+}
+
+if (!doc.name) isApi = false
+
+</script>
+<script src="js/rtd.js"></script>
+</body>
+</html>

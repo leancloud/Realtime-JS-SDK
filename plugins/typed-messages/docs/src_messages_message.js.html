@@ -1,0 +1,414 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Source: src/messages/message.js | leancloud-realtime-plugin-typed-messages</title>
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+</head>
+<body>
+<div class="main-container">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label for="nav-trigger" class="navicon-button x">
+      <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+    <nav class="lnb" id="lnb">
+        <div class="nav-main">
+            <h1><a href="index.html" class="link">leancloud-realtime-plugin-typed-messages</a></h1>
+            <span class="version">
+            
+                v3.1.0
+            
+            </span>
+        </div>
+        <div class="nav-search js-search">
+            <input type="text" placeholder="Search docs">
+            <ul class="searched-list"></ul>
+        </div>
+
+        
+
+        <div class="scroll">
+        <div class="nav-api hidden"><h3>Modules</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="module-leancloud-realtime-plugin-typed-messages.html">leancloud-realtime-plugin-typed-messages</a>
+                </header>
+                <div class="nav-item-sub hidden" id="module_leancloud-realtime-plugin-typed-messages_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-typed-messages.html#.AudioMessage">AudioMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-typed-messages.html#.FileMessage">FileMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-typed-messages.html#.ImageMessage">ImageMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-typed-messages.html#.LocationMessage">LocationMessage</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-typed-messages.html#.TypedMessagesPlugin">TypedMessagesPlugin</a></li><li class="sub-nav-item "><a href="module-leancloud-realtime-plugin-typed-messages.html#.VideoMessage">VideoMessage</a></li></ul></div></div>
+            </li></ul></div><div class="nav-api hidden"><h3>Classes</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="AudioMessage.html">AudioMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="AudioMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="AudioMessage.html#.TYPE">TYPE</a></li><li class="sub-nav-item "><a href="AudioMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="AudioMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="AudioMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="AudioMessage.html#from">from</a></li><li class="sub-nav-item "><a href="AudioMessage.html#id">id</a></li><li class="sub-nav-item "><a href="AudioMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="AudioMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="AudioMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="AudioMessage.html#status">status</a></li><li class="sub-nav-item "><a href="AudioMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="AudioMessage.html#text">text</a></li><li class="sub-nav-item "><a href="AudioMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="AudioMessage.html#type">type</a></li><li class="sub-nav-item "><a href="AudioMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="AudioMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="AudioMessage.html#getFile">getFile</a></li><li class="sub-nav-item "><a href="AudioMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="AudioMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="AudioMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="AudioMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="AudioMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="AudioMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="AudioMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="AudioMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="FileMessage.html">FileMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="FileMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="FileMessage.html#.TYPE">TYPE</a></li><li class="sub-nav-item "><a href="FileMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="FileMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="FileMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="FileMessage.html#from">from</a></li><li class="sub-nav-item "><a href="FileMessage.html#id">id</a></li><li class="sub-nav-item "><a href="FileMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="FileMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="FileMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="FileMessage.html#status">status</a></li><li class="sub-nav-item "><a href="FileMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="FileMessage.html#text">text</a></li><li class="sub-nav-item "><a href="FileMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="FileMessage.html#type">type</a></li><li class="sub-nav-item "><a href="FileMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="FileMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="FileMessage.html#getFile">getFile</a></li><li class="sub-nav-item "><a href="FileMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="FileMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="FileMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="FileMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="FileMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="FileMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="FileMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="FileMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="ImageMessage.html">ImageMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="ImageMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="ImageMessage.html#.TYPE">TYPE</a></li><li class="sub-nav-item "><a href="ImageMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="ImageMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="ImageMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="ImageMessage.html#from">from</a></li><li class="sub-nav-item "><a href="ImageMessage.html#id">id</a></li><li class="sub-nav-item "><a href="ImageMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="ImageMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="ImageMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="ImageMessage.html#status">status</a></li><li class="sub-nav-item "><a href="ImageMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="ImageMessage.html#text">text</a></li><li class="sub-nav-item "><a href="ImageMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="ImageMessage.html#type">type</a></li><li class="sub-nav-item "><a href="ImageMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="ImageMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="ImageMessage.html#getFile">getFile</a></li><li class="sub-nav-item "><a href="ImageMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="ImageMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="ImageMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="ImageMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="ImageMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="ImageMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="ImageMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="ImageMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="LocationMessage.html">LocationMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="LocationMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="LocationMessage.html#.TYPE">TYPE</a></li><li class="sub-nav-item "><a href="LocationMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="LocationMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="LocationMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="LocationMessage.html#from">from</a></li><li class="sub-nav-item "><a href="LocationMessage.html#id">id</a></li><li class="sub-nav-item "><a href="LocationMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="LocationMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="LocationMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="LocationMessage.html#status">status</a></li><li class="sub-nav-item "><a href="LocationMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="LocationMessage.html#text">text</a></li><li class="sub-nav-item "><a href="LocationMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="LocationMessage.html#type">type</a></li><li class="sub-nav-item "><a href="LocationMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="LocationMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="LocationMessage.html#getLocation">getLocation</a></li><li class="sub-nav-item "><a href="LocationMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="LocationMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="LocationMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="LocationMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="LocationMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="LocationMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="LocationMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="LocationMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Message.html">Message</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Message_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Message.html#cid">cid</a></li><li class="sub-nav-item "><a href="Message.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="Message.html#from">from</a></li><li class="sub-nav-item "><a href="Message.html#id">id</a></li><li class="sub-nav-item "><a href="Message.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="Message.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="Message.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="Message.html#status">status</a></li><li class="sub-nav-item "><a href="Message.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="Message.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Message.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="Message.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="Message.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="Message.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="Message.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="TypedMessage.html">TypedMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="TypedMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="TypedMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="TypedMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="TypedMessage.html#from">from</a></li><li class="sub-nav-item "><a href="TypedMessage.html#id">id</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#status">status</a></li><li class="sub-nav-item "><a href="TypedMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="TypedMessage.html#text">text</a></li><li class="sub-nav-item "><a href="TypedMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="TypedMessage.html#type">type</a></li><li class="sub-nav-item "><a href="TypedMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="TypedMessage.html#.parse">parse</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="TypedMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="TypedMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="TypedMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="TypedMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="VideoMessage.html">VideoMessage</a>
+                </header>
+                <div class="nav-item-sub hidden" id="VideoMessage_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="VideoMessage.html#.TYPE">TYPE</a></li><li class="sub-nav-item "><a href="VideoMessage.html#attributes">attributes</a></li><li class="sub-nav-item "><a href="VideoMessage.html#cid">cid</a></li><li class="sub-nav-item "><a href="VideoMessage.html#deliveredAt">deliveredAt</a></li><li class="sub-nav-item "><a href="VideoMessage.html#from">from</a></li><li class="sub-nav-item "><a href="VideoMessage.html#id">id</a></li><li class="sub-nav-item "><a href="VideoMessage.html#mentioned">mentioned</a></li><li class="sub-nav-item "><a href="VideoMessage.html#mentionedAll">mentionedAll</a></li><li class="sub-nav-item "><a href="VideoMessage.html#mentionList">mentionList</a></li><li class="sub-nav-item "><a href="VideoMessage.html#status">status</a></li><li class="sub-nav-item "><a href="VideoMessage.html#summary">summary</a></li><li class="sub-nav-item "><a href="VideoMessage.html#text">text</a></li><li class="sub-nav-item "><a href="VideoMessage.html#timestamp">timestamp</a></li><li class="sub-nav-item "><a href="VideoMessage.html#type">type</a></li><li class="sub-nav-item "><a href="VideoMessage.html#updatedAt">updatedAt</a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="VideoMessage.html#getAttributes">getAttributes</a></li><li class="sub-nav-item "><a href="VideoMessage.html#getFile">getFile</a></li><li class="sub-nav-item "><a href="VideoMessage.html#getMentionList">getMentionList</a></li><li class="sub-nav-item "><a href="VideoMessage.html#getText">getText</a></li><li class="sub-nav-item "><a href="VideoMessage.html#mentionAll">mentionAll</a></li><li class="sub-nav-item "><a href="VideoMessage.html#setAttributes">setAttributes</a></li><li class="sub-nav-item "><a href="VideoMessage.html#setMentionList">setMentionList</a></li><li class="sub-nav-item "><a href="VideoMessage.html#setText">setText</a></li><li class="sub-nav-item "><a href="VideoMessage.html#toFullJSON">toFullJSON</a></li><li class="sub-nav-item "><a href="VideoMessage.html#toJSON">toJSON</a></li></ul></div></div>
+            </li></ul></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Docs</a> »</li>
+            <li>Source: src/messages/message.js</li>
+        </ul>
+        <hr>
+        
+
+
+
+    
+<article>
+    <pre class="prettyprint source linenums"><code>import uuid from 'uuid/v4';
+import { ensureArray, decodeDate, getTime } from '../utils';
+
+/**
+ * 消息状态枚举
+ * @enum {Symbol}
+ * @since 3.2.0
+ * @memberof module:leancloud-realtime
+ */
+const MessageStatus = {
+  /** 初始状态、未知状态 */
+  NONE: Symbol('none'),
+  /** 正在发送 */
+  SENDING: Symbol('sending'),
+  /** 已发送 */
+  SENT: Symbol('sent'),
+  /** 已送达 */
+  DELIVERED: Symbol('delivered'),
+  /** 发送失败 */
+  FAILED: Symbol('failed'),
+};
+Object.freeze(MessageStatus);
+
+const rMessageStatus = {
+  [MessageStatus.NONE]: true,
+  [MessageStatus.SENDING]: true,
+  [MessageStatus.SENT]: true,
+  [MessageStatus.DELIVERED]: true,
+  [MessageStatus.READ]: true,
+  [MessageStatus.FAILED]: true,
+};
+
+export { MessageStatus };
+export default class Message {
+  /**
+   * @implements AVMessage
+   * @param  {Object|String|ArrayBuffer} content 消息内容
+   */
+  constructor(content) {
+    Object.assign(
+      this,
+      { content },
+      {
+        /**
+         * @type {String}
+         * @memberof Message#
+         */
+        id: uuid(),
+        /**
+         * 消息所在的 conversation id
+         * @memberof Message#
+         * @type {String?}
+         */
+        cid: null,
+        /**
+         * 消息发送时间
+         * @memberof Message#
+         * @type {Date}
+         */
+        timestamp: new Date(),
+        /**
+         * 消息发送者
+         * @memberof Message#
+         * @type {String}
+         */
+        from: undefined,
+        /**
+         * 消息提及的用户
+         * @since 4.0.0
+         * @memberof Message#
+         * @type {String[]}
+         */
+        mentionList: [],
+        /**
+         * 消息是否提及了所有人
+         * @since 4.0.0
+         * @memberof Message#
+         * @type {Boolean}
+         */
+        mentionedAll: false,
+        _mentioned: false,
+      }
+    );
+    this._setStatus(MessageStatus.NONE);
+  }
+
+  /**
+   * 将当前消息的内容序列化为 JSON 对象
+   * @private
+   * @return {Object}
+   */
+  getPayload() {
+    return this.content;
+  }
+
+  _toJSON() {
+    const {
+      id,
+      cid,
+      from,
+      timestamp,
+      deliveredAt,
+      updatedAt,
+      mentionList,
+      mentionedAll,
+      mentioned,
+    } = this;
+    return {
+      id,
+      cid,
+      from,
+      timestamp,
+      deliveredAt,
+      updatedAt,
+      mentionList,
+      mentionedAll,
+      mentioned,
+    };
+  }
+
+  /**
+   * 返回 JSON 格式的消息
+   * @return {Object} 返回值是一个 plain Object
+   */
+  toJSON() {
+    return {
+      ...this._toJSON(),
+      data: this.content,
+    };
+  }
+
+  /**
+   * 返回 JSON 格式的消息，与 toJSON 不同的是，该对象包含了完整的信息，可以通过 {@link IMClient#parseMessage} 反序列化。
+   * @return {Object} 返回值是一个 plain Object
+   * @since 4.0.0
+   */
+  toFullJSON() {
+    const {
+      content,
+      id,
+      cid,
+      from,
+      timestamp,
+      deliveredAt,
+      _updatedAt,
+      mentionList,
+      mentionedAll,
+    } = this;
+    return {
+      data: content,
+      id,
+      cid,
+      from,
+      timestamp: getTime(timestamp),
+      deliveredAt: getTime(deliveredAt),
+      updatedAt: getTime(_updatedAt),
+      mentionList,
+      mentionedAll,
+    };
+  }
+
+  /**
+   * 消息状态，值为 {@link module:leancloud-realtime.MessageStatus} 之一
+   * @type {Symbol}
+   * @readonly
+   * @since 3.2.0
+   */
+  get status() {
+    return this._status;
+  }
+
+  _setStatus(status) {
+    if (!rMessageStatus[status]) {
+      throw new Error('Invalid message status');
+    }
+    this._status = status;
+  }
+
+  get timestamp() {
+    return this._timestamp;
+  }
+
+  set timestamp(value) {
+    this._timestamp = decodeDate(value);
+  }
+
+  /**
+   * 消息送达时间
+   * @type {?Date}
+   */
+  get deliveredAt() {
+    return this._deliveredAt;
+  }
+
+  set deliveredAt(value) {
+    this._deliveredAt = decodeDate(value);
+  }
+
+  /**
+   * 消息修改或撤回时间，可以通过比较其与消息的 timestamp 是否相等判断消息是否被修改过或撤回过。
+   * @type {Date}
+   * @since 3.5.0
+   */
+  get updatedAt() {
+    return this._updatedAt || this.timestamp;
+  }
+
+  set updatedAt(value) {
+    this._updatedAt = decodeDate(value);
+  }
+
+  /**
+   * 当前用户是否在该消息中被提及
+   * @type {Boolean}
+   * @readonly
+   * @since 4.0.0
+   */
+  get mentioned() {
+    return this._mentioned;
+  }
+
+  _updateMentioned(client) {
+    this._mentioned =
+      this.from !== client &amp;&amp;
+      (this.mentionedAll || this.mentionList.indexOf(client) > -1);
+  }
+
+  /**
+   * 获取提及用户列表
+   * @since 4.0.0
+   * @return {String[]} 提及用户的 id 列表
+   */
+  getMentionList() {
+    return this.mentionList;
+  }
+
+  /**
+   * 设置提及用户列表
+   * @since 4.0.0
+   * @param {String[]} clients 提及用户的 id 列表
+   * @return {this} self
+   */
+  setMentionList(clients) {
+    this.mentionList = ensureArray(clients);
+    return this;
+  }
+
+  /**
+   * 设置是否提及所有人
+   * @since 4.0.0
+   * @param {Boolean} [value=true]
+   * @return {this} self
+   */
+  mentionAll(value = true) {
+    this.mentionedAll = Boolean(value);
+    return this;
+  }
+
+  /**
+   * 判断给定的内容是否是有效的 Message，
+   * 该方法始终返回 true
+   * @private
+   * @returns {Boolean}
+   * @implements AVMessage.validate
+   */
+  static validate() {
+    return true;
+  }
+
+  /**
+   * 解析处理消息内容
+   * &lt;pre>
+   * 如果子类提供了 message，返回该 message
+   * 如果没有提供，将 json 作为 content 实例化一个 Message
+   * @private
+   * @param  {Object}  json    json 格式的消息内容
+   * @param  {Message} message 子类提供的 message
+   * @return {Message}
+   * @implements AVMessage.parse
+   */
+  static parse(json, message) {
+    return message || new this(json);
+  }
+}
+</code></pre>
+</article>
+
+
+
+
+
+        <hr>
+        <footer>
+            <strong></strong><br/>
+            Documented with <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+        </footer>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+window.isApi = true
+window.isManual = false
+window.doc = {
+    name: '',
+    longname: '',
+}
+
+if (!doc.name) isApi = false
+
+</script>
+<script src="js/rtd.js"></script>
+</body>
+</html>
