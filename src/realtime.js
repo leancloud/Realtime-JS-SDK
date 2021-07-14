@@ -161,7 +161,10 @@ export default class Realtime extends EventEmitter {
       );
       connection
         .on(OPEN, () => resolve(connection))
-        .on(ERROR, reject)
+        .on(ERROR, error => {
+          delete this._openPromise;
+          reject(error);
+        })
         .on(EXPIRE, async () => {
           debug('Connection expired. Refresh endpoints.');
           this._cache.set('endpoints', null, 0);

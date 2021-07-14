@@ -296,7 +296,11 @@ const onRealtimeCreate = realtime => {
         ...finalize(() => {
           realtime._deregisterPending(promise);
         })
-      );
+      )
+      .catch(error => {
+        delete realtime._IMClients[id];
+        throw error;
+      });
     if (identity) {
       realtime._IMClients[id] = promise;
     }
